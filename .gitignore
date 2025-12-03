@@ -52,3 +52,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+.idea
+.DS_Store
+Management.sln.*.user
+
+docs-gen/api

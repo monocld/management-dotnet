@@ -1,0 +1,23 @@
+namespace MonoCloud.Management.Core.Exception;
+
+/// <summary>
+/// The MonoCloud Forbidden Exception
+/// </summary>
+public class MonoCloudForbiddenException : MonoCloudRequestException
+{
+  /// <summary>
+  /// Initializes the MonoCloudForbiddenException Class
+  /// </summary>
+  /// <param name="response">The problem details returned from the server.</param>
+  public MonoCloudForbiddenException(ProblemDetails response) : base(response)
+  {
+  }
+
+  /// <summary>
+  /// Initializes the MonoCloudForbiddenException Class
+  /// </summary>
+  /// <param name="message">The error message returned from the server.</param>
+  public MonoCloudForbiddenException(string message) : base(message)
+  {
+  }
+}
