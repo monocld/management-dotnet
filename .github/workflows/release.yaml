@@ -48,9 +48,13 @@ jobs:
         uses: changesets/action@v1
         with:
           version: ./.github/scripts/update-version.sh
-          publish: pnpm changeset tag
+          publish: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create and Push Git Tags
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm changeset tag
 
   build:
     name: Build Projects
