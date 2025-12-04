@@ -39,12 +39,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          version: >
-            pnpm changeset version &&
-            PACKAGE_VERSION=$(jq -r '.version' package.json) &&
-            sed -i 's|<Version>.*</Version>|<Version>'$PACKAGE_VERSION'</Version>|g' src/Directory.Packages.props &&
-            git add src/Directory.Packages.props
-
+          version: ./.github/scripts/update-version.sh
           publish: pnpm changeset tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
