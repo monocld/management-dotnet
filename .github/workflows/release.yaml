@@ -40,12 +40,16 @@ jobs:
         uses: changesets/action@v1
         with:
           version: |
-            sh -c '
-              pnpm changeset version &&
-              PACKAGE_VERSION=$(jq -r .version package.json) &&
-              sed -i "s|<Version>.*</Version>|<Version>$PACKAGE_VERSION</Version>|g" src/Directory.Packages.props &&
+            bash <<EOF
+              set -e
+              pnpm changeset version
+              PACKAGE_VERSION=\$(jq -r .version package.json)
+              echo "Syncing props to \$PACKAGE_VERSION"
+
+              sed -i "s|<Version>.*</Version>|<Version>\$PACKAGE_VERSION</Version>|g" src/Directory.Packages.props
+
               git add src/Directory.Packages.props
-            '
+            EOF
 
           publish: pnpm changeset tag
         env:
