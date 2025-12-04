@@ -1,0 +1,72 @@
+name: Release batched PRs
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Create Release PR or Tag
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: |
+            pnpm changeset version
+
+            PACKAGE_VERSION=$(jq -r .version package.json)
+            sed -i "s|<Version>.*</Version>|<Version>$PACKAGE_VERSION</Version>|g" src/Directory.Packages.props
+
+            git add src/Directory.Packages.props
+
+          publish: pnpm changeset tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup .NET Core SDK
+        if: steps.changesets.outputs.published == 'true'
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.x.x
+
+      # - name: Pack and Push to NuGet
+      #   if: steps.changesets.outputs.published == 'true'
+      #   run: |
+      #     # bridges Node.js version to .NET
+      #     PACKAGE_VERSION=$(jq -r .version package.json)
+
+      #     # Pack to a directory
+      #     dotnet pack --configuration Release --output nuget /p:Version=$PACKAGE_VERSION
+
+      #     # Push to PUBLIC NuGet.org
+      #     dotnet nuget push "nuget/*.nupkg" \
+      #       --api-key ${{ secrets.NUGET_TOKEN }} \
+      #       --source https://api.nuget.org/v3/index.json
