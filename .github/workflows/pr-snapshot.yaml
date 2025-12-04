@@ -1,0 +1,97 @@
+name: Snapshot Release on Comment
+
+on:
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+env:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+  DOTNET_NOLOGO: true
+  NuGetDirectory: ${{ github.workspace }}/nuget
+
+jobs:
+  snapshot:
+    if: github.event.issue.pull_request && startsWith(github.event.comment.body, '!snapshot')
+    name: Create Snapshot Release
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Get PR Info
+        uses: xt0rted/pull-request-comment-branch@v3
+        id: pr_info
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout Repo
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ steps.pr_info.outputs.head_ref }}
+          fetch-depth: 0
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Force Patch Snapshot Changeset
+        run: |
+          echo "Clearing existing changesets to force patch snapshot..."
+          find .changeset -name "*.md" ! -name "README.md" -delete
+
+          echo "Creating temporary patch changeset."
+
+          cat <<EOF > .changeset/temp-snapshot.md
+          ---
+          '@monocloud/monocloud-management-dotnet': patch
+          ---
+
+          Snapshot release.
+          EOF
+
+      - name: Create Snapshot Version
+        run: pnpm changeset version --snapshot canary
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Pack
+        run: |
+          PACKAGE_VERSION=$(jq -r .version package.json)
+          echo "Syncing to version: $PACKAGE_VERSION"
+          dotnet pack --configuration Release --output ${{ env.NuGetDirectory }} /p:Version=$PACKAGE_VERSION
+
+      - name: Push to GitHub Packages
+        run: |
+          dotnet nuget push "${{ env.NuGetDirectory }}/*.nupkg" \
+            --api-key ${{ secrets.GITHUB_TOKEN }} \
+            --source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+
+      - name: Comment on PR with version
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const packageJson = require('./package.json');
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `🚀 Private Snapshot published! \nVersion: \`${packageJson.version}\``
+            })
