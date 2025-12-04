@@ -58,3 +58,4 @@ nunit-*.xml
 Management.sln.*.user
 
 docs-gen/api
+node_modules

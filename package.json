@@ -1,0 +1,12 @@
+{
+  "name": "@monocloud/monocloud-management-dotnet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "changeset": "changeset"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.29.8"
+  },
+  "packageManager": "pnpm@10.24.0"
+}
