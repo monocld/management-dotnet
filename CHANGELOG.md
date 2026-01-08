@@ -1,5 +1,12 @@
 # @monocloud/management-dotnet
 
+## 0.2.1
+
+### Patch Changes
+
+- f7e8511: - Added documentation links to README
+  - Fixed API Reference home page and toc page
+
 ## 0.2.0
 
 ### Minor Changes
