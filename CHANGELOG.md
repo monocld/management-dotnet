@@ -1,5 +1,15 @@
 # @monocloud/management-dotnet
 
+## 0.2.2
+
+### Patch Changes
+
+- d5a6cd0: Fix NuGet package readme and update dependency versions
+
+  - Updated NuGet Readme to only include banner.
+  - Added NuGet Readme back to Management SDK.
+  - Bumped dependency versions.
+
 ## 0.2.1
 
 ### Patch Changes
