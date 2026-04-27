@@ -9,12 +9,13 @@ public class PatchPushedAuthorizationOptionsRequest
   /// <summary>
   /// Specifies whether Pushed Authorization Requests (PAR) are enabled for the tenant.
   /// </summary>
+  /// <note>Secure+ subscription required to use Pushed Authorization Requests (PAR).</note>
   public Optional<bool> EnablePushedAuthorizationRequests { get; set; }
 
   /// <summary>
   /// Specifies whether Pushed Authorization Requests (PAR) are required tenant-wide for all authorization requests.
   /// </summary>
-  /// <note>When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.</note>
+  /// <note>When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.  Secure+ subscription required to use Pushed Authorization Requests (PAR).</note>
   public Optional<bool> RequirePushedAuthorizationRequests { get; set; }
 }
 

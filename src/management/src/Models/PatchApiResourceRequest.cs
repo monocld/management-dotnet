@@ -22,11 +22,6 @@ public class PatchApiResourceRequest
   public Optional<string?> Description { get; set; }
 
   /// <summary>
-  /// Audience value that will be included in issued access tokens for this API resource.
-  /// </summary>
-  public Optional<string> Audience { get; set; }
-
-  /// <summary>
   /// Specifies whether access tokens issued for this resource must be exclusive and not shared with other API resources.
   /// </summary>
   /// <note>ScaleX subscription required to use resource isolation.</note>

@@ -22,11 +22,6 @@ public class PatchApiScopeRequest
   public Optional<bool> ShowInDiscoveryDocument { get; set; }
 
   /// <summary>
-  /// The unique name of the scope. This is the value a client will use for the scope parameter in the authorize request.
-  /// </summary>
-  public Optional<string> Name { get; set; }
-
-  /// <summary>
   /// Specifies whether the scope is mandatory and cannot be de-selected by the user on the consent screen.
   /// </summary>
   public Optional<bool> Required { get; set; }

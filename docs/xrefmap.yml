@@ -5290,6 +5290,19 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.Application.EmitOfflineAccessScopeInAccessToken
   nameWithType: Application.EmitOfflineAccessScopeInAccessToken
+- uid: MonoCloud.Management.Models.Application.EnableConsent
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.Application.html#MonoCloud_Management_Models_Application_EnableConsent
+  commentId: P:MonoCloud.Management.Models.Application.EnableConsent
+  fullName: MonoCloud.Management.Models.Application.EnableConsent
+  nameWithType: Application.EnableConsent
+- uid: MonoCloud.Management.Models.Application.EnableConsent*
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.Application.html#MonoCloud_Management_Models_Application_EnableConsent_
+  commentId: Overload:MonoCloud.Management.Models.Application.EnableConsent
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.Application.EnableConsent
+  nameWithType: Application.EnableConsent
 - uid: MonoCloud.Management.Models.Application.Enabled
   name: Enabled
   href: api/MonoCloud.Management.Models.Application.html#MonoCloud_Management_Models_Application_Enabled
@@ -8244,6 +8257,19 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.CreateApplicationRequest.EmitOfflineAccessScopeInAccessToken
   nameWithType: CreateApplicationRequest.EmitOfflineAccessScopeInAccessToken
+- uid: MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.CreateApplicationRequest.html#MonoCloud_Management_Models_CreateApplicationRequest_EnableConsent
+  commentId: P:MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent
+  fullName: MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent
+  nameWithType: CreateApplicationRequest.EnableConsent
+- uid: MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent*
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.CreateApplicationRequest.html#MonoCloud_Management_Models_CreateApplicationRequest_EnableConsent_
+  commentId: Overload:MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.CreateApplicationRequest.EnableConsent
+  nameWithType: CreateApplicationRequest.EnableConsent
 - uid: MonoCloud.Management.Models.CreateApplicationRequest.Enabled
   name: Enabled
   href: api/MonoCloud.Management.Models.CreateApplicationRequest.html#MonoCloud_Management_Models_CreateApplicationRequest_Enabled
@@ -13843,19 +13869,6 @@ references:
   commentId: T:MonoCloud.Management.Models.PatchApiResourceRequest
   fullName: MonoCloud.Management.Models.PatchApiResourceRequest
   nameWithType: PatchApiResourceRequest
-- uid: MonoCloud.Management.Models.PatchApiResourceRequest.Audience
-  name: Audience
-  href: api/MonoCloud.Management.Models.PatchApiResourceRequest.html#MonoCloud_Management_Models_PatchApiResourceRequest_Audience
-  commentId: P:MonoCloud.Management.Models.PatchApiResourceRequest.Audience
-  fullName: MonoCloud.Management.Models.PatchApiResourceRequest.Audience
-  nameWithType: PatchApiResourceRequest.Audience
-- uid: MonoCloud.Management.Models.PatchApiResourceRequest.Audience*
-  name: Audience
-  href: api/MonoCloud.Management.Models.PatchApiResourceRequest.html#MonoCloud_Management_Models_PatchApiResourceRequest_Audience_
-  commentId: Overload:MonoCloud.Management.Models.PatchApiResourceRequest.Audience
-  isSpec: "True"
-  fullName: MonoCloud.Management.Models.PatchApiResourceRequest.Audience
-  nameWithType: PatchApiResourceRequest.Audience
 - uid: MonoCloud.Management.Models.PatchApiResourceRequest.Description
   name: Description
   href: api/MonoCloud.Management.Models.PatchApiResourceRequest.html#MonoCloud_Management_Models_PatchApiResourceRequest_Description
@@ -13992,19 +14005,6 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchApiScopeRequest.IsDefault
   nameWithType: PatchApiScopeRequest.IsDefault
-- uid: MonoCloud.Management.Models.PatchApiScopeRequest.Name
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchApiScopeRequest.html#MonoCloud_Management_Models_PatchApiScopeRequest_Name
-  commentId: P:MonoCloud.Management.Models.PatchApiScopeRequest.Name
-  fullName: MonoCloud.Management.Models.PatchApiScopeRequest.Name
-  nameWithType: PatchApiScopeRequest.Name
-- uid: MonoCloud.Management.Models.PatchApiScopeRequest.Name*
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchApiScopeRequest.html#MonoCloud_Management_Models_PatchApiScopeRequest_Name_
-  commentId: Overload:MonoCloud.Management.Models.PatchApiScopeRequest.Name
-  isSpec: "True"
-  fullName: MonoCloud.Management.Models.PatchApiScopeRequest.Name
-  nameWithType: PatchApiScopeRequest.Name
 - uid: MonoCloud.Management.Models.PatchApiScopeRequest.Required
   name: Required
   href: api/MonoCloud.Management.Models.PatchApiScopeRequest.html#MonoCloud_Management_Models_PatchApiScopeRequest_Required
@@ -14563,6 +14563,19 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchApplicationRequest.EmitOfflineAccessScopeInAccessToken
   nameWithType: PatchApplicationRequest.EmitOfflineAccessScopeInAccessToken
+- uid: MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.PatchApplicationRequest.html#MonoCloud_Management_Models_PatchApplicationRequest_EnableConsent
+  commentId: P:MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent
+  fullName: MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent
+  nameWithType: PatchApplicationRequest.EnableConsent
+- uid: MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent*
+  name: EnableConsent
+  href: api/MonoCloud.Management.Models.PatchApplicationRequest.html#MonoCloud_Management_Models_PatchApplicationRequest_EnableConsent_
+  commentId: Overload:MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchApplicationRequest.EnableConsent
+  nameWithType: PatchApplicationRequest.EnableConsent
 - uid: MonoCloud.Management.Models.PatchApplicationRequest.Enabled
   name: Enabled
   href: api/MonoCloud.Management.Models.PatchApplicationRequest.html#MonoCloud_Management_Models_PatchApplicationRequest_Enabled
@@ -15192,19 +15205,6 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchClaimResourceRequest.DisplayName
   nameWithType: PatchClaimResourceRequest.DisplayName
-- uid: MonoCloud.Management.Models.PatchClaimResourceRequest.Name
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchClaimResourceRequest.html#MonoCloud_Management_Models_PatchClaimResourceRequest_Name
-  commentId: P:MonoCloud.Management.Models.PatchClaimResourceRequest.Name
-  fullName: MonoCloud.Management.Models.PatchClaimResourceRequest.Name
-  nameWithType: PatchClaimResourceRequest.Name
-- uid: MonoCloud.Management.Models.PatchClaimResourceRequest.Name*
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchClaimResourceRequest.html#MonoCloud_Management_Models_PatchClaimResourceRequest_Name_
-  commentId: Overload:MonoCloud.Management.Models.PatchClaimResourceRequest.Name
-  isSpec: "True"
-  fullName: MonoCloud.Management.Models.PatchClaimResourceRequest.Name
-  nameWithType: PatchClaimResourceRequest.Name
 - uid: MonoCloud.Management.Models.PatchClaimResourceRequest.ShowInDiscoveryDocument
   name: ShowInDiscoveryDocument
   href: api/MonoCloud.Management.Models.PatchClaimResourceRequest.html#MonoCloud_Management_Models_PatchClaimResourceRequest_ShowInDiscoveryDocument
@@ -18203,19 +18203,6 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchScopeRequest.Emphasize
   nameWithType: PatchScopeRequest.Emphasize
-- uid: MonoCloud.Management.Models.PatchScopeRequest.Name
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchScopeRequest.html#MonoCloud_Management_Models_PatchScopeRequest_Name
-  commentId: P:MonoCloud.Management.Models.PatchScopeRequest.Name
-  fullName: MonoCloud.Management.Models.PatchScopeRequest.Name
-  nameWithType: PatchScopeRequest.Name
-- uid: MonoCloud.Management.Models.PatchScopeRequest.Name*
-  name: Name
-  href: api/MonoCloud.Management.Models.PatchScopeRequest.html#MonoCloud_Management_Models_PatchScopeRequest_Name_
-  commentId: Overload:MonoCloud.Management.Models.PatchScopeRequest.Name
-  isSpec: "True"
-  fullName: MonoCloud.Management.Models.PatchScopeRequest.Name
-  nameWithType: PatchScopeRequest.Name
 - uid: MonoCloud.Management.Models.PatchScopeRequest.Required
   name: Required
   href: api/MonoCloud.Management.Models.PatchScopeRequest.html#MonoCloud_Management_Models_PatchScopeRequest_Required

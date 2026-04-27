@@ -543,6 +543,7 @@ public class ClientsClient : MonoCloudClientBase
   /// <remarks>
   /// Removes the specified application from the group. After removal, the group will no longer grant access or permissions to this application.
   /// </remarks>>
+  /// <note>Access to this endpoint requires an active ScaleX subscription.</note>
   /// <param name="clientId">The unique identifier of the application.</param>
   /// <param name="groupId">The unique identifier of the group.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
