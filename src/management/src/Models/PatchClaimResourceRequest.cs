@@ -22,11 +22,6 @@ public class PatchClaimResourceRequest
   public Optional<bool> ShowInDiscoveryDocument { get; set; }
 
   /// <summary>
-  /// The unique name of the claim.
-  /// </summary>
-  public Optional<string> Name { get; set; }
-
-  /// <summary>
   /// Specifies the expression or attribute path used to derive the claim value from the user profile or identity context.
   /// </summary>
   public Optional<string> Source { get; set; }

@@ -52,6 +52,12 @@ public class Application
   public string? LogoUri { get; set; }
 
   /// <summary>
+  /// Indicates whether the consents are enabled for the client.
+  /// </summary>
+  /// <note>Secure+ subscription required to use consents.</note>
+  public bool EnableConsent { get; set; }
+
+  /// <summary>
   /// Controls whether users are prompted to review and approve requested permissions.
   /// </summary>
   /// <note>Secure+ subscription required to use consents.</note>
@@ -60,7 +66,7 @@ public class Application
   /// <summary>
   /// Always prompts users for consent when requesting offline (refresh token) access.
   /// </summary>
-  /// <note>This setting applies even if the user previously chose to remember their consent.</note>
+  /// <note>This setting applies even if the user previously chose to remember their consent.  Secure+ subscription required to use consents.</note>
   public bool AlwaysRequireConsentForOfflineAccess { get; set; }
 
   /// <summary>
@@ -71,6 +77,7 @@ public class Application
   /// <summary>
   /// Allows end users to choose which requested scopes to grant on the consent screen.
   /// </summary>
+  /// <note>Secure+ subscription required to use consents.</note>
   public bool ShowConsentScopeSelection { get; set; }
 
   /// <summary>
@@ -112,6 +119,7 @@ public class Application
   /// <summary>
   /// Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.
   /// </summary>
+  /// <note>Secure+ subscription required to use Pushed Authorization Requests (PAR).</note>
   public bool AllowAnyPushedAuthorizationRedirectUri { get; set; }
 
   /// <summary>
@@ -146,6 +154,7 @@ public class Application
   /// <summary>
   /// Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.
   /// </summary>
+  /// <note>Pro plan subscription required to use front-channel logout.</note>
   public bool FrontChannelLogoutSessionRequired { get; set; }
 
   /// <summary>
@@ -157,6 +166,7 @@ public class Application
   /// <summary>
   /// Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.
   /// </summary>
+  /// <note>Secure+ subscription required to use back-channel logout.</note>
   public bool BackChannelLogoutSessionRequired { get; set; }
 
   /// <summary>
@@ -194,6 +204,7 @@ public class Application
   /// <summary>
   /// Specifies the validity period for stored user consent (in seconds). Set to &#x60;0&#x60; to allow consent to remain valid indefinitely.
   /// </summary>
+  /// <note>Secure+ subscription required to use consents.</note>
   public int ConsentLifetime { get; set; }
 
   /// <summary>

@@ -15,6 +15,7 @@ public class PatchSignUpRestrictionsOptionsRequest
   /// <summary>
   /// A set of identifiers (email addresses, phone numbers, or domains) used for sign-up access control.
   /// </summary>
+  /// <note>Pro plan subscription required to use sign-up restrictions.</note>
   public Optional<List<string>> Identifiers { get; set; }
 }
 
