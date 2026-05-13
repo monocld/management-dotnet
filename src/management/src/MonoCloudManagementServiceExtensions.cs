@@ -43,7 +43,7 @@ public static class MonoCloudManagementServiceExtensions
 
       if (settings.Timeout.HasValue)
       {
-        timeout = settings.Timeout.Value.Seconds;
+        timeout = (int)settings.Timeout.Value.TotalSeconds;
       }
     }
 
