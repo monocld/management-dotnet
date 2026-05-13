@@ -1,5 +1,11 @@
 # @monocloud/management-dotnet
 
+## 0.2.7
+
+### Patch Changes
+
+- af6b00f: Fix timeout assignment to use TotalSeconds in MonoCloudManagementServiceExtensions
+
 ## 0.2.6
 
 ### Patch Changes
