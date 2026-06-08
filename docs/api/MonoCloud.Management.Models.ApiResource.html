@@ -149,6 +149,134 @@ Class ApiResource  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
+  <a id="MonoCloud_Management_Models_ApiResource_AccessTokenLifetime_" data-uid="MonoCloud.Management.Models.ApiResource.AccessTokenLifetime*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_AccessTokenLifetime" data-uid="MonoCloud.Management.Models.ApiResource.AccessTokenLifetime">
+  AccessTokenLifetime
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default access token lifetime (in seconds) for this API resource. Used when no matching API access policy provides an override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AccessTokenLifetime { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoCloud_Management_Models_ApiResource_AccessTokenType_" data-uid="MonoCloud.Management.Models.ApiResource.AccessTokenType*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_AccessTokenType" data-uid="MonoCloud.Management.Models.ApiResource.AccessTokenType">
+  AccessTokenType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default access token type for this API resource. Used when no matching API access policy provides an override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessTokenTypes AccessTokenType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Models.AccessTokenTypes.html">AccessTokenTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoCloud_Management_Models_ApiResource_AllowMultiAudience_" data-uid="MonoCloud.Management.Models.ApiResource.AllowMultiAudience*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_AllowMultiAudience" data-uid="MonoCloud.Management.Models.ApiResource.AllowMultiAudience">
+  AllowMultiAudience
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowMultiAudience { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoCloud_Management_Models_ApiResource_AllowUserInfoAccess_" data-uid="MonoCloud.Management.Models.ApiResource.AllowUserInfoAccess*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_AllowUserInfoAccess" data-uid="MonoCloud.Management.Models.ApiResource.AllowUserInfoAccess">
+  AllowUserInfoAccess
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as <code>UserInfo</code>. Used when no matching API access policy provides an override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowUserInfoAccess { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MonoCloud_Management_Models_ApiResource_Audience_" data-uid="MonoCloud.Management.Models.ApiResource.Audience*"></a>
 
   <h3 id="MonoCloud_Management_Models_ApiResource_Audience" data-uid="MonoCloud.Management.Models.ApiResource.Audience">
@@ -171,6 +299,38 @@ Class ApiResource  <a class="header-action link-secondary" title="View source" h
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MonoCloud_Management_Models_ApiResource_BindTokensToSession_" data-uid="MonoCloud.Management.Models.ApiResource.BindTokensToSession*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_BindTokensToSession" data-uid="MonoCloud.Management.Models.ApiResource.BindTokensToSession">
+  BindTokensToSession
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BindTokensToSession { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
@@ -277,38 +437,6 @@ Class ApiResource  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="MonoCloud_Management_Models_ApiResource_EnableIdentityAccess_" data-uid="MonoCloud.Management.Models.ApiResource.EnableIdentityAccess*"></a>
-
-  <h3 id="MonoCloud_Management_Models_ApiResource_EnableIdentityAccess" data-uid="MonoCloud.Management.Models.ApiResource.EnableIdentityAccess">
-  EnableIdentityAccess
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L53"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Specifies whether access tokens issued for this resource may include identity scopes, allowing them to be used with identity-related endpoints such as <code>UserInfo</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool EnableIdentityAccess { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="MonoCloud_Management_Models_ApiResource_Enabled_" data-uid="MonoCloud.Management.Models.ApiResource.Enabled*"></a>
 
   <h3 id="MonoCloud_Management_Models_ApiResource_Enabled" data-uid="MonoCloud.Management.Models.ApiResource.Enabled">
@@ -373,6 +501,38 @@ Class ApiResource  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <a id="MonoCloud_Management_Models_ApiResource_IncludeJwtId_" data-uid="MonoCloud.Management.Models.ApiResource.IncludeJwtId*"></a>
+
+  <h3 id="MonoCloud_Management_Models_ApiResource_IncludeJwtId" data-uid="MonoCloud.Management.Models.ApiResource.IncludeJwtId">
+  IncludeJwtId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether access tokens issued for this API resource include a unique token identifier (jti).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IncludeJwtId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="MonoCloud_Management_Models_ApiResource_LastUpdated_" data-uid="MonoCloud.Management.Models.ApiResource.LastUpdated*"></a>
 
   <h3 id="MonoCloud_Management_Models_ApiResource_LastUpdated" data-uid="MonoCloud.Management.Models.ApiResource.LastUpdated">
@@ -405,43 +565,11 @@ Class ApiResource  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="MonoCloud_Management_Models_ApiResource_RequireExclusiveToken_" data-uid="MonoCloud.Management.Models.ApiResource.RequireExclusiveToken*"></a>
-
-  <h3 id="MonoCloud_Management_Models_ApiResource_RequireExclusiveToken" data-uid="MonoCloud.Management.Models.ApiResource.RequireExclusiveToken">
-  RequireExclusiveToken
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L47"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Specifies whether access tokens issued for this resource must be exclusive and not shared with other API resources.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequireExclusiveToken { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="MonoCloud_Management_Models_ApiResource_UserClaims_" data-uid="MonoCloud.Management.Models.ApiResource.UserClaims*"></a>
 
   <h3 id="MonoCloud_Management_Models_ApiResource_UserClaims" data-uid="MonoCloud.Management.Models.ApiResource.UserClaims">
   UserClaims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/ApiResource.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>List of user claim types that will be embedded into access tokens issued for this API resource.</p>

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum LogCategories </title>
+      <title>Enum TrustStoreSource </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum LogCategories ">
+      <meta name="title" content="Enum TrustStoreSource ">
       
-      <meta name="description" content="The log event category.">
+      <meta name="description" content="The source from which a trust store&#39;s certificate chain is loaded.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/monocloud/management-dotnet/new/main/apiSpec/new?filename=MonoCloud_Management_Models_LogCategories.md&amp;value=---%0Auid%3A%20MonoCloud.Management.Models.LogCategories%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/monocloud/management-dotnet/new/main/apiSpec/new?filename=MonoCloud_Management_Models_TrustStoreSource.md&amp;value=---%0Auid%3A%20MonoCloud.Management.Models.TrustStoreSource%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,13 +80,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MonoCloud.Management.Models.LogCategories">
+        <article data-uid="MonoCloud.Management.Models.TrustStoreSource">
 
 
 
 
-  <h1 id="MonoCloud_Management_Models_LogCategories" data-uid="MonoCloud.Management.Models.LogCategories" class="text-break">
-Enum LogCategories  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/LogCategories.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MonoCloud_Management_Models_TrustStoreSource" data-uid="MonoCloud.Management.Models.TrustStoreSource" class="text-break">
+Enum TrustStoreSource  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/TrustStoreSource.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -94,12 +94,12 @@ Enum LogCategories  <a class="header-action link-secondary" title="View source" 
   <dl><dt>Assembly</dt><dd>MonoCloud.Management.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>The log event category.</p>
+  <div class="markdown summary"><p>The source from which a trust store's certificate chain is loaded.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum LogCategories</code></pre>
+    <pre><code class="lang-csharp hljs">public enum TrustStoreSource</code></pre>
   </div>
 
 
@@ -113,57 +113,13 @@ Enum LogCategories  <a class="header-action link-secondary" title="View source" 
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="MonoCloud_Management_Models_LogCategories_Authentication"><code>Authentication = 0</code></dt>
+    <dt id="MonoCloud_Management_Models_TrustStoreSource_Database"><code>Database = 0</code></dt>
   
-  <dd><p>Events related to user authentication and sign-in flows.</p>
+  <dd><p>Certificate chain is uploaded directly through the API and stored alongside the trust store.</p>
 </dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Blocks"><code>Blocks = 3</code></dt>
+    <dt id="MonoCloud_Management_Models_TrustStoreSource_S3"><code>S3 = 1</code></dt>
   
-  <dd><p>Events related to security blocks and enforcement actions.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Clients"><code>Clients = 9</code></dt>
-  
-  <dd><p>Events related to OAuth and OIDC client configuration.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Consent"><code>Consent = 2</code></dt>
-  
-  <dd><p>Events related to user consent and permission approval.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Groups"><code>Groups = 10</code></dt>
-  
-  <dd><p>Events related to group management and membership changes.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_NetworkZones"><code>NetworkZones = 12</code></dt>
-  
-  <dd><p>Events related to network zones.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Notifications"><code>Notifications = 6</code></dt>
-  
-  <dd><p>Events related to notifications and message delivery.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Policies"><code>Policies = 11</code></dt>
-  
-  <dd><p>Events related to access policies.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Resources"><code>Resources = 7</code></dt>
-  
-  <dd><p>Events related to identity resources, API resources, and protected backend services.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Tokens"><code>Tokens = 1</code></dt>
-  
-  <dd><p>Events related to token issuance, refresh, and validation.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_TrustStore"><code>TrustStore = 8</code></dt>
-  
-  <dd><p>Events related to mTLS trust stores and certificate validation.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_UserSessions"><code>UserSessions = 5</code></dt>
-  
-  <dd><p>Events related to user session creation, termination, and activity.</p>
-</dd>
-    <dt id="MonoCloud_Management_Models_LogCategories_Users"><code>Users = 4</code></dt>
-  
-  <dd><p>Events related to user lifecycle and profile changes.</p>
+  <dd><p>Certificate chain is fetched from a customer-owned S3 object using a cross-account IAM role.</p>
 </dd>
   </dl>
 

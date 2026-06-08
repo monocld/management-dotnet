@@ -188,7 +188,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
   <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Specifies how long an access token remains valid (in seconds).</p>
+  <div class="markdown level1 summary"><p>Specifies how long access tokens issued without API resource scopes remain valid (in seconds). These tokens may only be used with the UserInfo endpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -220,7 +220,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
   <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L239"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Specifies whether access tokens are issued as self-contained JWTs or as opaque references stored server-side.</p>
+  <div class="markdown level1 summary"><p>Specifies whether access tokens issued without API resource scopes are issued as self-contained JWTs or opaque reference tokens. These tokens may only be used with the UserInfo endpoint.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -377,7 +377,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_AllowedCorsOrigins" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.AllowedCorsOrigins">
   AllowedCorsOrigins
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures the set of trusted origins permitted to perform cross-origin requests for this client.</p>
@@ -537,7 +537,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_AlwaysSendClientClaims" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.AlwaysSendClientClaims">
   AlwaysSendClientClaims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L255"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Controls whether client claims are always emitted in access tokens, or only when using the client credentials flow.</p>
@@ -697,7 +697,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_AutoGenerateSecret" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.AutoGenerateSecret">
   AutoGenerateSecret
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Automatically generates a secure application secret when the application is created.</p>
@@ -789,19 +789,19 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
 
 
-  <a id="MonoCloud_Management_Models_CreateApplicationRequest_BindTokensToSession_" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.BindTokensToSession*"></a>
+  <a id="MonoCloud_Management_Models_CreateApplicationRequest_BindRefreshTokensToSession_" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.BindRefreshTokensToSession*"></a>
 
-  <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_BindTokensToSession" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.BindTokensToSession">
-  BindTokensToSession
+  <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_BindRefreshTokensToSession" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.BindRefreshTokensToSession">
+  BindRefreshTokensToSession
   <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Binds issued tokens to the user's session. When enabled, all tokens and grants are automatically revoked when the user signs out or the session expires.</p>
+  <div class="markdown level1 summary"><p>Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool? BindTokensToSession { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool? BindRefreshTokensToSession { get; set; }</code></pre>
   </div>
 
 
@@ -825,7 +825,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_Claims" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.Claims">
   Claims
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L250"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Defines custom claims issued to this client and embedded into access tokens for downstream APIs and resources.</p>
@@ -857,7 +857,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_ClientClaimsPrefix" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.ClientClaimsPrefix">
   ClientClaimsPrefix
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Configures a prefix for client claims, helping avoid naming collisions across tokens and downstream APIs.</p>
@@ -1017,7 +1017,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_DeviceCodeLength" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.DeviceCodeLength">
   DeviceCodeLength
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the length of the user verification code generated for the device flow.</p>
@@ -1049,7 +1049,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_DeviceCodeLifetime" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.DeviceCodeLifetime">
   DeviceCodeLifetime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Specifies the lifetime of the device authorization code (in seconds).</p>
@@ -1259,38 +1259,6 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="MonoCloud_Management_Models_CreateApplicationRequest_IncludeJwtId_" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.IncludeJwtId*"></a>
-
-  <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_IncludeJwtId" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.IncludeJwtId">
-  IncludeJwtId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L251"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Determines whether issued access tokens include a unique token identifier (jti).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool? IncludeJwtId { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -1785,7 +1753,7 @@ Class CreateApplicationRequest  <a class="header-action link-secondary" title="V
 
   <h3 id="MonoCloud_Management_Models_CreateApplicationRequest_UserSsoLifetime" data-uid="MonoCloud.Management.Models.CreateApplicationRequest.UserSsoLifetime">
   UserSsoLifetime
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/CreateApplicationRequest.cs/#L270"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Maximum allowed SSO duration (in seconds). After this window, users must sign in again to confirm identity. Set to <code>0</code> to disable the limit.</p>

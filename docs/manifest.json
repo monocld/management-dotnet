@@ -74,6 +74,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Clients.NetworkZonesClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Clients.NetworkZonesClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Clients.NetworkZonesClient",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Clients.NetworkZonesClient.yml\" sourcestartlinenumber=\"1\">Represents a collection of functions to interact with the NetworkZones Api endpoints</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Clients.OptionsClient.yml",
       "output": {
         ".html": {
@@ -844,6 +858,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.AdvancedApiAccessPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.AdvancedApiAccessPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.AdvancedApiAccessPolicy",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.AdvancedApiAccessPolicy.yml\" sourcestartlinenumber=\"1\">Advanced API Access Policy Response: Represents a stored advanced API access policy authored using Cedar.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ApiAccessPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ApiAccessPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ApiAccessPolicy",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ApiAccessPolicy.yml\" sourcestartlinenumber=\"1\">API Access Policy Response: Represents an API access policy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ApiAccessPolicyActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ApiAccessPolicyActions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ApiAccessPolicyActions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ApiAccessPolicyActions.yml\" sourcestartlinenumber=\"1\">API Access Policy Actions Response: Represents the action settings applied when an API access policy rule matches.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.ApiResource.yml",
       "output": {
         ".html": {
@@ -1040,6 +1096,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BasicApiAccessPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BasicApiAccessPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BasicApiAccessPolicy",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BasicApiAccessPolicy.yml\" sourcestartlinenumber=\"1\">Basic API Access Policy Response: Represents a basic API access policy defined using structured conditions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.CertificateRevocation.yml",
       "output": {
         ".html": {
@@ -1180,6 +1250,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest.yml\" sourcestartlinenumber=\"1\">Create Advanced API Access Policy Request: Creates an advanced API access policy from raw Cedar policy source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest.yml\" sourcestartlinenumber=\"1\">Create Basic API Access Policy Request: Creates a basic API access policy using structured conditions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateApiAccessPolicyActionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateApiAccessPolicyActionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateApiAccessPolicyActionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateApiAccessPolicyActionsRequest.yml\" sourcestartlinenumber=\"1\">Create API Access Policy Actions Request: Action settings for an API Access Policy rule.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.CreateApiResourceClientRequest.yml",
       "output": {
         ".html": {
@@ -1275,6 +1387,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.CreateGroupRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateGroupRequest.yml\" sourcestartlinenumber=\"1\">Create Group Request: Used to create a new group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateIpNetworkZoneRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateIpNetworkZoneRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateIpNetworkZoneRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateIpNetworkZoneRequest.yml\" sourcestartlinenumber=\"1\">Create IP Network Zone Request: Used to create an IP network zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateRegionalNetworkZoneRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateRegionalNetworkZoneRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateRegionalNetworkZoneRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateRegionalNetworkZoneRequest.yml\" sourcestartlinenumber=\"1\">Create Regional Network Zone Request: Used to create a regional network zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateS3SourceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateS3SourceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateS3SourceRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateS3SourceRequest.yml\" sourcestartlinenumber=\"1\">Create S3 Source Request: Bucket, key and IAM role MonoCloud should use to fetch the certificate chain.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1684,6 +1838,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.INetworkZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.INetworkZone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.INetworkZone",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.INetworkZone.yml\" sourcestartlinenumber=\"1\">Network Zone Response: Represents a Network Zone (IP or Regional).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.IdPs.yml",
       "output": {
         ".html": {
@@ -1723,6 +1891,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.IdentityError",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.IdentityError.yml\" sourcestartlinenumber=\"1\">Identity Error: Represents a validation or processing error returned by the identity system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.IpNetworkZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.IpNetworkZone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.IpNetworkZone",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.IpNetworkZone.yml\" sourcestartlinenumber=\"1\">IP Network Zone Response: Represents a IP Network Zone.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1922,6 +2104,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.NetworkZoneCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.NetworkZoneCategory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.NetworkZoneCategory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.NetworkZoneOperator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.NetworkZoneOperator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.NetworkZoneOperator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PageBrandingOptions.yml",
       "output": {
         ".html": {
@@ -2087,6 +2297,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.PatchAccountProtectionUserUnblockOptionsRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchAccountProtectionUserUnblockOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Account Protection User Unblock Options Request: Used to update user account unblock configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest.yml\" sourcestartlinenumber=\"1\">Patch Advanced API Access Policy Request: Used to partially update an advanced API access policy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest.yml\" sourcestartlinenumber=\"1\">Patch Basic API Access Policy Request: Used to partially update a basic API access policy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchApiAccessPolicyActionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchApiAccessPolicyActionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchApiAccessPolicyActionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchApiAccessPolicyActionsRequest.yml\" sourcestartlinenumber=\"1\">Patch API Access Policy Actions Request: Used to partially update action settings for an API access policy.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2468,6 +2720,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchIpNetworkZoneRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchIpNetworkZoneRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchIpNetworkZoneRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchIpNetworkZoneRequest.yml\" sourcestartlinenumber=\"1\">Patch IP Network Zone Request: Used to partially update an IP network zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PatchLinkedInAuthenticatorOptionsRequest.yml",
       "output": {
         ".html": {
@@ -2675,6 +2941,34 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.PatchRecoveryMethodsPhoneOptionsRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchRecoveryMethodsPhoneOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Phone Recovery Method Options Request: Used to update phone-based account and password recovery configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchRegionalNetworkZoneRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchRegionalNetworkZoneRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchRegionalNetworkZoneRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchRegionalNetworkZoneRequest.yml\" sourcestartlinenumber=\"1\">Patch Regional Network Zone Request: Used to partially update a regional network zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchS3SourceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchS3SourceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchS3SourceRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchS3SourceRequest.yml\" sourcestartlinenumber=\"1\">Patch S3 Source Request: Update one or more S3 fetch fields on an existing S3 trust store.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2888,6 +3182,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PolicyTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PolicyTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PolicyTypes",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PolicyTypes.yml\" sourcestartlinenumber=\"1\">The policy rule authoring type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PushedAuthorizationOptions.yml",
       "output": {
         ".html": {
@@ -3000,6 +3308,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.RegionalNetworkZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.RegionalNetworkZone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.RegionalNetworkZone",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.RegionalNetworkZone.yml\" sourcestartlinenumber=\"1\">Regional Network Zone Response: Represents a Regional Network Zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.RememberConsentTypes.yml",
       "output": {
         ".html": {
@@ -3081,6 +3403,34 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.RevocationGroupedDelta",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.RevocationGroupedDelta.yml\" sourcestartlinenumber=\"1\">Revocation Grouped Delta Response: Represents a delta certificate revocation list (delta CRL) associated with a base CRL.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.S3SetupToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.S3SetupToken.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.S3SetupToken",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.S3SetupToken.yml\" sourcestartlinenumber=\"1\">S3 Setup Token: Values the customer needs to configure an IAM role in their AWS account before creating an S3-backed trust store. The returned <code sourcefile=\"api/MonoCloud.Management.Models.S3SetupToken.yml\" sourcestartlinenumber=\"1\">external_id</code> must be supplied verbatim to <code sourcefile=\"api/MonoCloud.Management.Models.S3SetupToken.yml\" sourcestartlinenumber=\"1\">POST /truststores</code> in the <code sourcefile=\"api/MonoCloud.Management.Models.S3SetupToken.yml\" sourcestartlinenumber=\"1\">s3_source</code> payload.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.S3Source.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.S3Source.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.S3Source",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.S3Source.yml\" sourcestartlinenumber=\"1\">S3 Source Response: Configuration and fetch metadata for an S3-backed trust store.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3333,6 +3683,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.TrustStoreOptions",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.TrustStoreOptions.yml\" sourcestartlinenumber=\"1\">Trust Store Options Response: Represents the configuration applied for mTLS certificate validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.TrustStoreSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.TrustStoreSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.TrustStoreSource",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.TrustStoreSource.yml\" sourcestartlinenumber=\"1\">The source from which a trust store's certificate chain is loaded.</p>\n"
     },
     {
       "type": "ManagedReference",

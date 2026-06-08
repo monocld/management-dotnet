@@ -232,6 +232,168 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 </h2>
 
 
+  <a id="MonoCloud_Management_Clients_ResourcesClient_ConvertApiAccessBasicToAdvancedPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.ConvertApiAccessBasicToAdvancedPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_ConvertApiAccessBasicToAdvancedPolicyAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.ConvertApiAccessBasicToAdvancedPolicyAsync(System.String,System.String,System.Threading.CancellationToken)">
+  ConvertApiAccessBasicToAdvancedPolicyAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert a basic API access policy to an advanced policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;AdvancedApiAccessPolicy&gt;&gt; ConvertApiAccessBasicToAdvancedPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the basic API access policy to convert.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.AdvancedApiAccessPolicy.html">AdvancedApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>AdvancedApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_ConvertApiAccessBasicToAdvancedPolicyAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Converts the specified basic API access policy into an advanced Cedar-authored policy in place. The policy ID is preserved, and the generated Cedar source becomes the starting point for further editing. Basic-only fields, such as clients and scopes, are discarded.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessAdvancedPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiAccessAdvancedPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessAdvancedPolicyAsync_System_String_MonoCloud_Management_Models_CreateApiAccessAdvancedPolicyRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiAccessAdvancedPolicyAsync(System.String,MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest,System.Threading.CancellationToken)">
+  CreateApiAccessAdvancedPolicyAsync(string, CreateApiAccessAdvancedPolicyRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create an advanced API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;AdvancedApiAccessPolicy&gt;&gt; CreateApiAccessAdvancedPolicyAsync(string apiId, CreateApiAccessAdvancedPolicyRequest createApiAccessAdvancedPolicyRequest, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>createApiAccessAdvancedPolicyRequest</code> <a class="xref" href="MonoCloud.Management.Models.CreateApiAccessAdvancedPolicyRequest.html">CreateApiAccessAdvancedPolicyRequest</a></dt>
+    <dd><p>The request payload used to create the policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.AdvancedApiAccessPolicy.html">AdvancedApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>AdvancedApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessAdvancedPolicyAsync_System_String_MonoCloud_Management_Models_CreateApiAccessAdvancedPolicyRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Creates a new advanced API access policy for the specified API resource using raw Cedar policy source.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessBasicPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiAccessBasicPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessBasicPolicyAsync_System_String_MonoCloud_Management_Models_CreateApiAccessBasicPolicyRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiAccessBasicPolicyAsync(System.String,MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest,System.Threading.CancellationToken)">
+  CreateApiAccessBasicPolicyAsync(string, CreateApiAccessBasicPolicyRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a basic API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;BasicApiAccessPolicy&gt;&gt; CreateApiAccessBasicPolicyAsync(string apiId, CreateApiAccessBasicPolicyRequest createApiAccessBasicPolicyRequest, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>createApiAccessBasicPolicyRequest</code> <a class="xref" href="MonoCloud.Management.Models.CreateApiAccessBasicPolicyRequest.html">CreateApiAccessBasicPolicyRequest</a></dt>
+    <dd><p>The request payload used to create the policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.BasicApiAccessPolicy.html">BasicApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>BasicApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_CreateApiAccessBasicPolicyAsync_System_String_MonoCloud_Management_Models_CreateApiAccessBasicPolicyRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Creates a new basic API access policy for the specified API resource using structured conditions.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
   <a id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiResourceAsync*"></a>
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceAsync_MonoCloud_Management_Models_CreateApiResourceRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiResourceAsync(MonoCloud.Management.Models.CreateApiResourceRequest,System.Threading.CancellationToken)">
@@ -272,63 +434,6 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceAsync_MonoCloud_Management_Models_CreateApiResourceRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Creates a new API resource that represents a protected backend or service and can be referenced by clients to request access tokens.</p>
-</div>
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
-    <dd><p>A server side error occurred.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceClientAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiResourceClientAsync*"></a>
-
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceClientAsync_System_String_System_String_MonoCloud_Management_Models_CreateApiResourceClientRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateApiResourceClientAsync(System.String,System.String,MonoCloud.Management.Models.CreateApiResourceClientRequest,System.Threading.CancellationToken)">
-  CreateApiResourceClientAsync(string, string, CreateApiResourceClientRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L765"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Create API resource client access</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;ApiResourceClient&gt;&gt; CreateApiResourceClientAsync(string apiId, string clientId, CreateApiResourceClientRequest createApiResourceClientRequest, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the API resource.</p>
-</dd>
-    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the client.</p>
-</dd>
-    <dt><code>createApiResourceClientRequest</code> <a class="xref" href="MonoCloud.Management.Models.CreateApiResourceClientRequest.html">CreateApiResourceClientRequest</a></dt>
-    <dd><p>The request payload used to create an access entry authorizing the client for the API resource.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiResourceClient.html">ApiResourceClient</a>&gt;&gt;</dt>
-    <dd><p>ApiResourceClient</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_CreateApiResourceClientAsync_System_String_System_String_MonoCloud_Management_Models_CreateApiResourceClientRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Creates an access entry between a client and an API resource, authorizing the client to request access tokens for the resource.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -452,7 +557,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateClaimResourceAsync_MonoCloud_Management_Models_CreateClaimResourceRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateClaimResourceAsync(MonoCloud.Management.Models.CreateClaimResourceRequest,System.Threading.CancellationToken)">
   CreateClaimResourceAsync(CreateClaimResourceRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1377"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Create a claim</p>
@@ -503,7 +608,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_CreateScopeAsync_MonoCloud_Management_Models_CreateScopeRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.CreateScopeAsync(MonoCloud.Management.Models.CreateScopeRequest,System.Threading.CancellationToken)">
   CreateScopeAsync(CreateScopeRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1006"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Create a scope</p>
@@ -539,6 +644,112 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_CreateScopeAsync_MonoCloud_Management_Models_CreateScopeRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Creates a new identity scope that defines a permission clients can request to receive specific user claims.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessAdvancedPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteApiAccessAdvancedPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessAdvancedPolicyAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteApiAccessAdvancedPolicyAsync(System.String,System.String,System.Threading.CancellationToken)">
+  DeleteApiAccessAdvancedPolicyAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delete an advanced API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&gt; DeleteApiAccessAdvancedPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse.html">MonoCloudResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessAdvancedPolicyAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Permanently deletes the specified advanced API access policy from the API resource.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessBasicPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteApiAccessBasicPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessBasicPolicyAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteApiAccessBasicPolicyAsync(System.String,System.String,System.Threading.CancellationToken)">
+  DeleteApiAccessBasicPolicyAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L851"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delete a basic API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&gt; DeleteApiAccessBasicPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse.html">MonoCloudResponse</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_DeleteApiAccessBasicPolicyAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Permanently deletes the specified basic API access policy from the API resource.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -710,7 +921,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_DeleteClaimResourceAsync_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteClaimResourceAsync(System.String,System.Threading.CancellationToken)">
   DeleteClaimResourceAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1496"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Delete a claim</p>
@@ -760,7 +971,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_DeleteScopeAsync_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.DeleteScopeAsync(System.String,System.Threading.CancellationToken)">
   DeleteScopeAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1124"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Delete a scope</p>
@@ -795,6 +1006,114 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_DeleteScopeAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Permanently deletes the specified identity scope.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessAdvancedPolicyByIdAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiAccessAdvancedPolicyByIdAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessAdvancedPolicyByIdAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiAccessAdvancedPolicyByIdAsync(System.String,System.String,System.Threading.CancellationToken)">
+  FindApiAccessAdvancedPolicyByIdAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a advanced API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;AdvancedApiAccessPolicy&gt;&gt; FindApiAccessAdvancedPolicyByIdAsync(string apiId, string policyId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.AdvancedApiAccessPolicy.html">AdvancedApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>AdvancedApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessAdvancedPolicyByIdAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Retrieves detailed information for the specified advanced API access policy.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessBasicPolicyByIdAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiAccessBasicPolicyByIdAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessBasicPolicyByIdAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiAccessBasicPolicyByIdAsync(System.String,System.String,System.Threading.CancellationToken)">
+  FindApiAccessBasicPolicyByIdAsync(string, string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve a basic API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;BasicApiAccessPolicy&gt;&gt; FindApiAccessBasicPolicyByIdAsync(string apiId, string policyId, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.BasicApiAccessPolicy.html">BasicApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>BasicApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_FindApiAccessBasicPolicyByIdAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Retrieves detailed information for the specified basic API access policy.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -846,60 +1165,6 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_FindApiResourceByIdAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Retrieves detailed information for the specified API resource.</p>
-</div>
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
-    <dd><p>A server side error occurred.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="MonoCloud_Management_Clients_ResourcesClient_FindApiResourceClientAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiResourceClientAsync*"></a>
-
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_FindApiResourceClientAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindApiResourceClientAsync(System.String,System.String,System.Threading.CancellationToken)">
-  FindApiResourceClientAsync(string, string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L816"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Retrieve an API resource client access entry</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;ApiResourceClient&gt;&gt; FindApiResourceClientAsync(string apiId, string clientId, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the API resource.</p>
-</dd>
-    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the client.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiResourceClient.html">ApiResourceClient</a>&gt;&gt;</dt>
-    <dd><p>ApiResourceClient</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_FindApiResourceClientAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Retrieves detailed information for an access entry that authorizes a specific client for the specified API resource.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -1023,7 +1288,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_FindClaimResourceByIdAsync_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindClaimResourceByIdAsync(System.String,System.Threading.CancellationToken)">
   FindClaimResourceByIdAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve a claim</p>
@@ -1074,7 +1339,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_FindScopeByIdAsync_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.FindScopeByIdAsync(System.String,System.Threading.CancellationToken)">
   FindScopeByIdAsync(string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1042"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieve a scope</p>
@@ -1121,19 +1386,19 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiResourceClientsAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllApiResourceClientsAsync*"></a>
+  <a id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiAccessPoliciesAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllApiAccessPoliciesAsync*"></a>
 
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiResourceClientsAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllApiResourceClientsAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
-  GetAllApiResourceClientsAsync(string, int?, int?, string?, CancellationToken)
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiAccessPoliciesAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllApiAccessPoliciesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
+  GetAllApiAccessPoliciesAsync(string, int?, int?, string?, CancellationToken)
   <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L656"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>List API resource client access</p>
+  <div class="markdown level1 summary"><p>List API access policies</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;List&lt;ApiResourceClient&gt;, PageModel&gt;&gt; GetAllApiResourceClientsAsync(string apiId, int? page = 1, int? size = 10, string? sort = null, CancellationToken cancellationToken = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;List&lt;ApiAccessPolicy&gt;, PageModel&gt;&gt; GetAllApiAccessPoliciesAsync(string apiId, int? page = 1, int? size = 10, string? sort = null, CancellationToken cancellationToken = default)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -1145,10 +1410,10 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
     <dd><p>The page number to retrieve.</p>
 </dd>
     <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd><p>The number of API–client access entries to return per page.</p>
+    <dd><p>The number of API access policies to return per page.</p>
 </dd>
     <dt><code>sort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Sort expression in the format <code>field:direction</code>, where direction is <code>1</code> for ascending or <code>-1</code> for descending. Supported fields include - <code>client_id</code>, <code>creation_time</code> and <code>last_updated</code></p>
+    <dd><p>Sort expression in the format <code>field:direction</code>, where direction is <code>1</code> for ascending or <code>-1</code> for descending. Supported fields include - <code>name</code>, <code>type</code>, <code>is_permitted</code>, <code>creation_time</code> and <code>last_updated</code></p>
 </dd>
     <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
@@ -1157,8 +1422,8 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-2.html">MonoCloudResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiResourceClient.html">ApiResourceClient</a>&gt;, <a class="xref" href="MonoCloud.Management.Core.Helpers.PageModel.html">PageModel</a>&gt;&gt;</dt>
-    <dd><p>List&lt;ApiResourceClient&gt;</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-2.html">MonoCloudResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiAccessPolicy.html">ApiAccessPolicy</a>&gt;, <a class="xref" href="MonoCloud.Management.Core.Helpers.PageModel.html">PageModel</a>&gt;&gt;</dt>
+    <dd><p>List&lt;ApiAccessPolicy&gt;</p>
 </dd>
   </dl>
 
@@ -1168,8 +1433,8 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiResourceClientsAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Retrieves a paginated list of client access entries for the specified API resource. Optional query parameters allow sorting of the results.</p>
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_GetAllApiAccessPoliciesAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Retrieves a paginated list of API access policies (both basic and advanced) for the specified API resource. Optional query parameters allow sorting of the results.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -1359,7 +1624,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_GetAllClaimResourcesAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllClaimResourcesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Threading.CancellationToken)">
   GetAllClaimResourcesAsync(int?, int?, string?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>List claims</p>
@@ -1415,71 +1680,11 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="MonoCloud_Management_Clients_ResourcesClient_GetAllClientApiResourcesAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllClientApiResourcesAsync*"></a>
-
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_GetAllClientApiResourcesAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllClientApiResourcesAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Threading.CancellationToken)">
-  GetAllClientApiResourcesAsync(string, int?, int?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L711"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>List API resource access for a client</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;List&lt;ApiResourceClient&gt;, PageModel&gt;&gt; GetAllClientApiResourcesAsync(string clientId, int? page = 1, int? size = 10, string? sort = null, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the client.</p>
-</dd>
-    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd><p>The page number to retrieve.</p>
-</dd>
-    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
-    <dd><p>The number of API–client access entries to return per page.</p>
-</dd>
-    <dt><code>sort</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Sort expression in the format <code>field:direction</code>, where direction is <code>1</code> for ascending or <code>-1</code> for descending. Supported fields include - <code>client_id</code>, <code>creation_time</code> and <code>last_updated</code></p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-2.html">MonoCloudResponse</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiResourceClient.html">ApiResourceClient</a>&gt;, <a class="xref" href="MonoCloud.Management.Core.Helpers.PageModel.html">PageModel</a>&gt;&gt;</dt>
-    <dd><p>List&lt;ApiResourceClient&gt;</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_GetAllClientApiResourcesAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Retrieves a paginated list of API resource access entries associated with the specified client. Optional query parameters allow sorting of the results.</p>
-</div>
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
-    <dd><p>A server side error occurred.</p>
-</dd>
-  </dl>
-
-
-
   <a id="MonoCloud_Management_Clients_ResourcesClient_GetAllScopesAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllScopesAsync*"></a>
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_GetAllScopesAsync_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.GetAllScopesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Threading.CancellationToken)">
   GetAllScopesAsync(int?, int?, string?, string?, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L956"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1123"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>List scopes</p>
@@ -1535,6 +1740,120 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessAdvancedPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiAccessAdvancedPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessAdvancedPolicyAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiAccessAdvancedPolicyRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiAccessAdvancedPolicyAsync(System.String,System.String,MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest,System.Threading.CancellationToken)">
+  PatchApiAccessAdvancedPolicyAsync(string, string, PatchApiAccessAdvancedPolicyRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1028"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update an advanced API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;AdvancedApiAccessPolicy&gt;&gt; PatchApiAccessAdvancedPolicyAsync(string apiId, string policyId, PatchApiAccessAdvancedPolicyRequest patchApiAccessAdvancedPolicyRequest, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>patchApiAccessAdvancedPolicyRequest</code> <a class="xref" href="MonoCloud.Management.Models.PatchApiAccessAdvancedPolicyRequest.html">PatchApiAccessAdvancedPolicyRequest</a></dt>
+    <dd><p>The request payload used to update the policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.AdvancedApiAccessPolicy.html">AdvancedApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>AdvancedApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessAdvancedPolicyAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiAccessAdvancedPolicyRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Applies a partial update to the specified advanced API access policy. Only fields included in the request are updated.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessBasicPolicyAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiAccessBasicPolicyAsync*"></a>
+
+  <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessBasicPolicyAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiAccessBasicPolicyRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiAccessBasicPolicyAsync(System.String,System.String,MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest,System.Threading.CancellationToken)">
+  PatchApiAccessBasicPolicyAsync(string, string, PatchApiAccessBasicPolicyRequest, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L799"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update a basic API access policy</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;BasicApiAccessPolicy&gt;&gt; PatchApiAccessBasicPolicyAsync(string apiId, string policyId, PatchApiAccessBasicPolicyRequest patchApiAccessBasicPolicyRequest, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API resource.</p>
+</dd>
+    <dt><code>policyId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The unique identifier of the API access policy.</p>
+</dd>
+    <dt><code>patchApiAccessBasicPolicyRequest</code> <a class="xref" href="MonoCloud.Management.Models.PatchApiAccessBasicPolicyRequest.html">PatchApiAccessBasicPolicyRequest</a></dt>
+    <dd><p>The request payload used to update the policy.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.BasicApiAccessPolicy.html">BasicApiAccessPolicy</a>&gt;&gt;</dt>
+    <dd><p>BasicApiAccessPolicy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_PatchApiAccessBasicPolicyAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiAccessBasicPolicyRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Applies a partial update to the specified basic API access policy. Only fields included in the request are updated.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
+    <dd><p>A server side error occurred.</p>
+</dd>
+  </dl>
+
+
+
   <a id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiResourceAsync*"></a>
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceAsync_System_String_MonoCloud_Management_Models_PatchApiResourceRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiResourceAsync(System.String,MonoCloud.Management.Models.PatchApiResourceRequest,System.Threading.CancellationToken)">
@@ -1578,63 +1897,6 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceAsync_System_String_MonoCloud_Management_Models_PatchApiResourceRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Applies a partial update to the specified API resource. Only fields included in the request are updated.</p>
-</div>
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
-    <dd><p>A server side error occurred.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceClientAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiResourceClientAsync*"></a>
-
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceClientAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiResourceClientRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchApiResourceClientAsync(System.String,System.String,MonoCloud.Management.Models.PatchApiResourceClientRequest,System.Threading.CancellationToken)">
-  PatchApiResourceClientAsync(string, string, PatchApiResourceClientRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L862"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Update an API resource client access entry</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&lt;ApiResourceClient&gt;&gt; PatchApiResourceClientAsync(string apiId, string clientId, PatchApiResourceClientRequest patchApiResourceClientRequest, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the API resource.</p>
-</dd>
-    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the client.</p>
-</dd>
-    <dt><code>patchApiResourceClientRequest</code> <a class="xref" href="MonoCloud.Management.Models.PatchApiResourceClientRequest.html">PatchApiResourceClientRequest</a></dt>
-    <dd><p>The request payload used to update the client access configuration.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse-1.html">MonoCloudResponse</a>&lt;<a class="xref" href="MonoCloud.Management.Models.ApiResourceClient.html">ApiResourceClient</a>&gt;&gt;</dt>
-    <dd><p>ApiResourceClient</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_PatchApiResourceClientAsync_System_String_System_String_MonoCloud_Management_Models_PatchApiResourceClientRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Updates the scope restrictions for an existing client access entry.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
@@ -1707,7 +1969,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchClaimResourceAsync_System_String_MonoCloud_Management_Models_PatchClaimResourceRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchClaimResourceAsync(System.String,MonoCloud.Management.Models.PatchClaimResourceRequest,System.Threading.CancellationToken)">
   PatchClaimResourceAsync(string, PatchClaimResourceRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1452"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Update a claim</p>
@@ -1761,7 +2023,7 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="MonoCloud_Management_Clients_ResourcesClient_PatchScopeAsync_System_String_MonoCloud_Management_Models_PatchScopeRequest_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.PatchScopeAsync(System.String,MonoCloud.Management.Models.PatchScopeRequest,System.Threading.CancellationToken)">
   PatchScopeAsync(string, PatchScopeRequest, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1080"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L1247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Update a scope</p>
@@ -1800,59 +2062,6 @@ Class ResourcesClient  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_PatchScopeAsync_System_String_MonoCloud_Management_Models_PatchScopeRequest_System_Threading_CancellationToken__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>Applies a partial update to the specified identity scope. Only fields included in the request are updated.</p>
-</div>
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Core.Exception.MonoCloudException.html">MonoCloudException</a></dt>
-    <dd><p>A server side error occurred.</p>
-</dd>
-  </dl>
-
-
-
-  <a id="MonoCloud_Management_Clients_ResourcesClient_RemoveApiResourceClientAsync_" data-uid="MonoCloud.Management.Clients.ResourcesClient.RemoveApiResourceClientAsync*"></a>
-
-  <h3 id="MonoCloud_Management_Clients_ResourcesClient_RemoveApiResourceClientAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="MonoCloud.Management.Clients.ResourcesClient.RemoveApiResourceClientAsync(System.String,System.String,System.Threading.CancellationToken)">
-  RemoveApiResourceClientAsync(string, string, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Clients/ResourcesApi.cs/#L913"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Remove an API resource client access entry</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;MonoCloudResponse&gt; RemoveApiResourceClientAsync(string apiId, string clientId, CancellationToken cancellationToken = default)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>apiId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the API resource.</p>
-</dd>
-    <dt><code>clientId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The unique identifier of the client.</p>
-</dd>
-    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
-    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> used to propagate notifications that the operation should be canceled.</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="MonoCloud.Management.Core.Base.MonoCloudResponse.html">MonoCloudResponse</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section" id="MonoCloud_Management_Clients_ResourcesClient_RemoveApiResourceClientAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h4>
-  <div class="markdown level1 remarks"><p>Removes the access entry that authorizes the specified client to request tokens for the API resource. After removal, the client will no longer be permitted to access this API resource.</p>
 </div>
 
   <h4 class="section">Exceptions</h4>
