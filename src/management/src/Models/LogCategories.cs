@@ -58,7 +58,17 @@ public enum LogCategories
   /// <summary>
   /// Events related to group management and membership changes.
   /// </summary>
-  Groups
+  Groups,
+
+  /// <summary>
+  /// Events related to access policies.
+  /// </summary>
+  Policies,
+
+  /// <summary>
+  /// Events related to network zones.
+  /// </summary>
+  NetworkZones
 }
 
 

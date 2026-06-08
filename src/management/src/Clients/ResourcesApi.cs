@@ -641,19 +641,19 @@ public class ResourcesClient : MonoCloudClientBase
   }
 
   /// <summary>
-  /// List API resource client access
+  /// List API access policies
   /// </summary>
   /// <remarks>
-  /// Retrieves a paginated list of client access entries for the specified API resource. Optional query parameters allow sorting of the results.
+  /// Retrieves a paginated list of API access policies (both basic and advanced) for the specified API resource. Optional query parameters allow sorting of the results.
   /// </remarks>>
   /// <param name="apiId">The unique identifier of the API resource.</param>
   /// <param name="page">The page number to retrieve.</param>
-  /// <param name="size">The number of API–client access entries to return per page.</param>
-  /// <param name="sort">Sort expression in the format &#x60;field:direction&#x60;, where direction is &#x60;1&#x60; for ascending or &#x60;-1&#x60; for descending. Supported fields include - &#x60;client_id&#x60;, &#x60;creation_time&#x60; and &#x60;last_updated&#x60;</param>
+  /// <param name="size">The number of API access policies to return per page.</param>
+  /// <param name="sort">Sort expression in the format &#x60;field:direction&#x60;, where direction is &#x60;1&#x60; for ascending or &#x60;-1&#x60; for descending. Supported fields include - &#x60;name&#x60;, &#x60;type&#x60;, &#x60;is_permitted&#x60;, &#x60;creation_time&#x60; and &#x60;last_updated&#x60;</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
-  /// <returns>List&lt;ApiResourceClient&gt;</returns>
+  /// <returns>List&lt;ApiAccessPolicy&gt;</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<List<ApiResourceClient>, PageModel>> GetAllApiResourceClientsAsync(string apiId, int? page = 1, int? size = 10, string? sort = default, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<List<ApiAccessPolicy>, PageModel>> GetAllApiAccessPoliciesAsync(string apiId, int? page = 1, int? size = 10, string? sort = default, CancellationToken cancellationToken = default)
   {
     if (apiId == null)
     {
@@ -663,7 +663,7 @@ public class ResourcesClient : MonoCloudClientBase
     var encodedApiId = HttpUtility.UrlEncode(apiId);
 
     var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/{encodedApiId}/clients?");
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies?");
 
     if (page != null)
     {
@@ -692,99 +692,36 @@ public class ResourcesClient : MonoCloudClientBase
       }
     };
 
-    return ProcessRequestAsync<List<ApiResourceClient>, PageModel>(request, cancellationToken);
+    return ProcessRequestAsync<List<ApiAccessPolicy>, PageModel>(request, cancellationToken);
   }
 
   /// <summary>
-  /// List API resource access for a client
+  /// Create a basic API access policy
   /// </summary>
   /// <remarks>
-  /// Retrieves a paginated list of API resource access entries associated with the specified client. Optional query parameters allow sorting of the results.
-  /// </remarks>>
-  /// <param name="clientId">The unique identifier of the client.</param>
-  /// <param name="page">The page number to retrieve.</param>
-  /// <param name="size">The number of API–client access entries to return per page.</param>
-  /// <param name="sort">Sort expression in the format &#x60;field:direction&#x60;, where direction is &#x60;1&#x60; for ascending or &#x60;-1&#x60; for descending. Supported fields include - &#x60;client_id&#x60;, &#x60;creation_time&#x60; and &#x60;last_updated&#x60;</param>
-  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
-  /// <returns>List&lt;ApiResourceClient&gt;</returns>
-  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<List<ApiResourceClient>, PageModel>> GetAllClientApiResourcesAsync(string clientId, int? page = 1, int? size = 10, string? sort = default, CancellationToken cancellationToken = default)
-  {
-    if (clientId == null)
-    {
-      throw new ArgumentNullException(nameof(clientId));
-    }
-
-    var encodedClientId = HttpUtility.UrlEncode(clientId);
-
-    var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/clients/{encodedClientId}?");
-
-    if (page != null)
-    {
-      urlBuilder.Append(Uri.EscapeDataString("page") + "=").Append(HttpUtility.UrlEncode(page.ToString())).Append("&");
-    }
-
-    if (size != null)
-    {
-      urlBuilder.Append(Uri.EscapeDataString("size") + "=").Append(HttpUtility.UrlEncode(size.ToString())).Append("&");
-    }
-
-    if (sort != null)
-    {
-      urlBuilder.Append(Uri.EscapeDataString("sort") + "=").Append(HttpUtility.UrlEncode(sort)).Append("&");
-    }
-
-    urlBuilder.Length--;
-
-    var request = new HttpRequestMessage
-    {
-      Method = new HttpMethod("GET"),
-      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
-      Headers =
-      {
-        { "Accept", "application/json" }
-      }
-    };
-
-    return ProcessRequestAsync<List<ApiResourceClient>, PageModel>(request, cancellationToken);
-  }
-
-  /// <summary>
-  /// Create API resource client access
-  /// </summary>
-  /// <remarks>
-  /// Creates an access entry between a client and an API resource, authorizing the client to request access tokens for the resource.
+  /// Creates a new basic API access policy for the specified API resource using structured conditions.
   /// </remarks>>
   /// <param name="apiId">The unique identifier of the API resource.</param>
-  /// <param name="clientId">The unique identifier of the client.</param>
-  /// <param name="createApiResourceClientRequest">The request payload used to create an access entry authorizing the client for the API resource.</param>
+  /// <param name="createApiAccessBasicPolicyRequest">The request payload used to create the policy.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
-  /// <returns>ApiResourceClient</returns>
+  /// <returns>BasicApiAccessPolicy</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<ApiResourceClient>> CreateApiResourceClientAsync(string apiId, string clientId, CreateApiResourceClientRequest createApiResourceClientRequest, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<BasicApiAccessPolicy>> CreateApiAccessBasicPolicyAsync(string apiId, CreateApiAccessBasicPolicyRequest createApiAccessBasicPolicyRequest, CancellationToken cancellationToken = default)
   {
     if (apiId == null)
     {
       throw new ArgumentNullException(nameof(apiId));
     }
 
-    if (clientId == null)
+    if (createApiAccessBasicPolicyRequest == null)
     {
-      throw new ArgumentNullException(nameof(clientId));
-    }
-
-    if (createApiResourceClientRequest == null)
-    {
-      throw new ArgumentNullException(nameof(createApiResourceClientRequest));
+      throw new ArgumentNullException(nameof(createApiAccessBasicPolicyRequest));
     }
 
     var encodedApiId = HttpUtility.UrlEncode(apiId);
 
-    var encodedClientId = HttpUtility.UrlEncode(clientId);
-
     var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/{encodedApiId}/clients/{encodedClientId}?");
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/basic?");
 
     urlBuilder.Length--;
 
@@ -792,45 +729,45 @@ public class ResourcesClient : MonoCloudClientBase
     {
       Method = new HttpMethod("POST"),
       RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
-      Content = new StringContent(Serialize(createApiResourceClientRequest), Encoding.UTF8, "application/json"),
+      Content = new StringContent(Serialize(createApiAccessBasicPolicyRequest), Encoding.UTF8, "application/json"),
       Headers =
       {
         { "Accept", "application/json" }
       }
     };
 
-    return ProcessRequestAsync<ApiResourceClient>(request, cancellationToken);
+    return ProcessRequestAsync<BasicApiAccessPolicy>(request, cancellationToken);
   }
 
   /// <summary>
-  /// Retrieve an API resource client access entry
+  /// Retrieve a basic API access policy
   /// </summary>
   /// <remarks>
-  /// Retrieves detailed information for an access entry that authorizes a specific client for the specified API resource.
+  /// Retrieves detailed information for the specified basic API access policy.
   /// </remarks>>
   /// <param name="apiId">The unique identifier of the API resource.</param>
-  /// <param name="clientId">The unique identifier of the client.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
-  /// <returns>ApiResourceClient</returns>
+  /// <returns>BasicApiAccessPolicy</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<ApiResourceClient>> FindApiResourceClientAsync(string apiId, string clientId, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<BasicApiAccessPolicy>> FindApiAccessBasicPolicyByIdAsync(string apiId, string policyId, CancellationToken cancellationToken = default)
   {
     if (apiId == null)
     {
       throw new ArgumentNullException(nameof(apiId));
     }
 
-    if (clientId == null)
+    if (policyId == null)
     {
-      throw new ArgumentNullException(nameof(clientId));
+      throw new ArgumentNullException(nameof(policyId));
     }
 
     var encodedApiId = HttpUtility.UrlEncode(apiId);
 
-    var encodedClientId = HttpUtility.UrlEncode(clientId);
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
 
     var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/{encodedApiId}/clients/{encodedClientId}?");
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/basic/{encodedPolicyId}?");
 
     urlBuilder.Length--;
 
@@ -844,44 +781,44 @@ public class ResourcesClient : MonoCloudClientBase
       }
     };
 
-    return ProcessRequestAsync<ApiResourceClient>(request, cancellationToken);
+    return ProcessRequestAsync<BasicApiAccessPolicy>(request, cancellationToken);
   }
 
   /// <summary>
-  /// Update an API resource client access entry
+  /// Update a basic API access policy
   /// </summary>
   /// <remarks>
-  /// Updates the scope restrictions for an existing client access entry.
+  /// Applies a partial update to the specified basic API access policy. Only fields included in the request are updated.
   /// </remarks>>
   /// <param name="apiId">The unique identifier of the API resource.</param>
-  /// <param name="clientId">The unique identifier of the client.</param>
-  /// <param name="patchApiResourceClientRequest">The request payload used to update the client access configuration.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
+  /// <param name="patchApiAccessBasicPolicyRequest">The request payload used to update the policy.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
-  /// <returns>ApiResourceClient</returns>
+  /// <returns>BasicApiAccessPolicy</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<ApiResourceClient>> PatchApiResourceClientAsync(string apiId, string clientId, PatchApiResourceClientRequest patchApiResourceClientRequest, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<BasicApiAccessPolicy>> PatchApiAccessBasicPolicyAsync(string apiId, string policyId, PatchApiAccessBasicPolicyRequest patchApiAccessBasicPolicyRequest, CancellationToken cancellationToken = default)
   {
     if (apiId == null)
     {
       throw new ArgumentNullException(nameof(apiId));
     }
 
-    if (clientId == null)
+    if (policyId == null)
     {
-      throw new ArgumentNullException(nameof(clientId));
+      throw new ArgumentNullException(nameof(policyId));
     }
 
-    if (patchApiResourceClientRequest == null)
+    if (patchApiAccessBasicPolicyRequest == null)
     {
-      throw new ArgumentNullException(nameof(patchApiResourceClientRequest));
+      throw new ArgumentNullException(nameof(patchApiAccessBasicPolicyRequest));
     }
 
     var encodedApiId = HttpUtility.UrlEncode(apiId);
 
-    var encodedClientId = HttpUtility.UrlEncode(clientId);
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
 
     var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/{encodedApiId}/clients/{encodedClientId}?");
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/basic/{encodedPolicyId}?");
 
     urlBuilder.Length--;
 
@@ -889,45 +826,275 @@ public class ResourcesClient : MonoCloudClientBase
     {
       Method = new HttpMethod("PATCH"),
       RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
-      Content = new StringContent(Serialize(patchApiResourceClientRequest), Encoding.UTF8, "application/json"),
+      Content = new StringContent(Serialize(patchApiAccessBasicPolicyRequest), Encoding.UTF8, "application/json"),
       Headers =
       {
         { "Accept", "application/json" }
       }
     };
 
-    return ProcessRequestAsync<ApiResourceClient>(request, cancellationToken);
+    return ProcessRequestAsync<BasicApiAccessPolicy>(request, cancellationToken);
   }
 
   /// <summary>
-  /// Remove an API resource client access entry
+  /// Delete a basic API access policy
   /// </summary>
   /// <remarks>
-  /// Removes the access entry that authorizes the specified client to request tokens for the API resource. After removal, the client will no longer be permitted to access this API resource.
+  /// Permanently deletes the specified basic API access policy from the API resource.
   /// </remarks>>
+  /// <warning>This operation is irreversible.</warning>
   /// <param name="apiId">The unique identifier of the API resource.</param>
-  /// <param name="clientId">The unique identifier of the client.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
   /// <returns></returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse> RemoveApiResourceClientAsync(string apiId, string clientId, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse> DeleteApiAccessBasicPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)
   {
     if (apiId == null)
     {
       throw new ArgumentNullException(nameof(apiId));
     }
 
-    if (clientId == null)
+    if (policyId == null)
     {
-      throw new ArgumentNullException(nameof(clientId));
+      throw new ArgumentNullException(nameof(policyId));
     }
 
     var encodedApiId = HttpUtility.UrlEncode(apiId);
 
-    var encodedClientId = HttpUtility.UrlEncode(clientId);
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
 
     var urlBuilder = new StringBuilder();
-    urlBuilder.Append($"resources/api_resources/{encodedApiId}/clients/{encodedClientId}?");
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/basic/{encodedPolicyId}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("DELETE"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+    };
+
+    return ProcessRequestAsync(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Convert a basic API access policy to an advanced policy
+  /// </summary>
+  /// <remarks>
+  /// Converts the specified basic API access policy into an advanced Cedar-authored policy in place. The policy ID is preserved, and the generated Cedar source becomes the starting point for further editing. Basic-only fields, such as clients and scopes, are discarded.
+  /// </remarks>>
+  /// <warning>This operation is irreversible.</warning>
+  /// <param name="apiId">The unique identifier of the API resource.</param>
+  /// <param name="policyId">The unique identifier of the basic API access policy to convert.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>AdvancedApiAccessPolicy</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<AdvancedApiAccessPolicy>> ConvertApiAccessBasicToAdvancedPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)
+  {
+    if (apiId == null)
+    {
+      throw new ArgumentNullException(nameof(apiId));
+    }
+
+    if (policyId == null)
+    {
+      throw new ArgumentNullException(nameof(policyId));
+    }
+
+    var encodedApiId = HttpUtility.UrlEncode(apiId);
+
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/basic/{encodedPolicyId}/convert?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("POST"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<AdvancedApiAccessPolicy>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Create an advanced API access policy
+  /// </summary>
+  /// <remarks>
+  /// Creates a new advanced API access policy for the specified API resource using raw Cedar policy source.
+  /// </remarks>>
+  /// <param name="apiId">The unique identifier of the API resource.</param>
+  /// <param name="createApiAccessAdvancedPolicyRequest">The request payload used to create the policy.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>AdvancedApiAccessPolicy</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<AdvancedApiAccessPolicy>> CreateApiAccessAdvancedPolicyAsync(string apiId, CreateApiAccessAdvancedPolicyRequest createApiAccessAdvancedPolicyRequest, CancellationToken cancellationToken = default)
+  {
+    if (apiId == null)
+    {
+      throw new ArgumentNullException(nameof(apiId));
+    }
+
+    if (createApiAccessAdvancedPolicyRequest == null)
+    {
+      throw new ArgumentNullException(nameof(createApiAccessAdvancedPolicyRequest));
+    }
+
+    var encodedApiId = HttpUtility.UrlEncode(apiId);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/advanced?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("POST"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Content = new StringContent(Serialize(createApiAccessAdvancedPolicyRequest), Encoding.UTF8, "application/json"),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<AdvancedApiAccessPolicy>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Retrieve a advanced API access policy
+  /// </summary>
+  /// <remarks>
+  /// Retrieves detailed information for the specified advanced API access policy.
+  /// </remarks>>
+  /// <param name="apiId">The unique identifier of the API resource.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>AdvancedApiAccessPolicy</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<AdvancedApiAccessPolicy>> FindApiAccessAdvancedPolicyByIdAsync(string apiId, string policyId, CancellationToken cancellationToken = default)
+  {
+    if (apiId == null)
+    {
+      throw new ArgumentNullException(nameof(apiId));
+    }
+
+    if (policyId == null)
+    {
+      throw new ArgumentNullException(nameof(policyId));
+    }
+
+    var encodedApiId = HttpUtility.UrlEncode(apiId);
+
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/advanced/{encodedPolicyId}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("GET"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<AdvancedApiAccessPolicy>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Update an advanced API access policy
+  /// </summary>
+  /// <remarks>
+  /// Applies a partial update to the specified advanced API access policy. Only fields included in the request are updated.
+  /// </remarks>>
+  /// <param name="apiId">The unique identifier of the API resource.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
+  /// <param name="patchApiAccessAdvancedPolicyRequest">The request payload used to update the policy.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>AdvancedApiAccessPolicy</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<AdvancedApiAccessPolicy>> PatchApiAccessAdvancedPolicyAsync(string apiId, string policyId, PatchApiAccessAdvancedPolicyRequest patchApiAccessAdvancedPolicyRequest, CancellationToken cancellationToken = default)
+  {
+    if (apiId == null)
+    {
+      throw new ArgumentNullException(nameof(apiId));
+    }
+
+    if (policyId == null)
+    {
+      throw new ArgumentNullException(nameof(policyId));
+    }
+
+    if (patchApiAccessAdvancedPolicyRequest == null)
+    {
+      throw new ArgumentNullException(nameof(patchApiAccessAdvancedPolicyRequest));
+    }
+
+    var encodedApiId = HttpUtility.UrlEncode(apiId);
+
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/advanced/{encodedPolicyId}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("PATCH"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Content = new StringContent(Serialize(patchApiAccessAdvancedPolicyRequest), Encoding.UTF8, "application/json"),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<AdvancedApiAccessPolicy>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Delete an advanced API access policy
+  /// </summary>
+  /// <remarks>
+  /// Permanently deletes the specified advanced API access policy from the API resource.
+  /// </remarks>>
+  /// <warning>This operation is irreversible.</warning>
+  /// <param name="apiId">The unique identifier of the API resource.</param>
+  /// <param name="policyId">The unique identifier of the API access policy.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns></returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse> DeleteApiAccessAdvancedPolicyAsync(string apiId, string policyId, CancellationToken cancellationToken = default)
+  {
+    if (apiId == null)
+    {
+      throw new ArgumentNullException(nameof(apiId));
+    }
+
+    if (policyId == null)
+    {
+      throw new ArgumentNullException(nameof(policyId));
+    }
+
+    var encodedApiId = HttpUtility.UrlEncode(apiId);
+
+    var encodedPolicyId = HttpUtility.UrlEncode(policyId);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"resources/api_resources/{encodedApiId}/policies/advanced/{encodedPolicyId}?");
 
     urlBuilder.Length--;
 

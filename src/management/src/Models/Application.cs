@@ -170,10 +170,10 @@ public class Application
   public bool BackChannelLogoutSessionRequired { get; set; }
 
   /// <summary>
-  /// Binds issued tokens to the user&#39;s session. When enabled, all tokens and grants are automatically revoked when the user signs out or the session expires.
+  /// Binds refresh tokens issued for the client to the user&#39;s session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.
   /// </summary>
   /// <note>ScaleX subscription required to use session binding.</note>
-  public bool BindTokensToSession { get; set; }
+  public bool BindRefreshTokensToSession { get; set; }
 
   /// <summary>
   /// Allows the client to obtain refresh tokens using the &#x60;offline_access&#x60; scope.
@@ -192,7 +192,7 @@ public class Application
   public int IdentityTokenLifetime { get; set; }
 
   /// <summary>
-  /// Specifies how long an access token remains valid (in seconds).
+  /// Specifies how long access tokens issued without API resource scopes remain valid (in seconds). These tokens may only be used with the UserInfo endpoint.
   /// </summary>
   public int AccessTokenLifetime { get; set; }
 
@@ -239,7 +239,7 @@ public class Application
   public RefreshTokenExpirationTypes RefreshTokenExpiration { get; set; }
 
   /// <summary>
-  /// Specifies whether access tokens are issued as self-contained JWTs or as opaque references stored server-side.
+  /// Specifies whether access tokens issued without API resource scopes are issued as self-contained JWTs or opaque reference tokens. These tokens may only be used with the UserInfo endpoint.
   /// </summary>
   public AccessTokenTypes AccessTokenType { get; set; }
 
@@ -248,12 +248,6 @@ public class Application
   /// </summary>
   /// <note>Pro plan subscription required to enable authenticator restrictions.</note>
   public List<Authenticators> AuthenticatorRestrictions { get; set; }
-
-  /// <summary>
-  /// Determines whether issued access tokens include a unique token identifier (jti).
-  /// </summary>
-  /// <note>Recommended for auditing, correlation, and replay-detection.</note>
-  public bool IncludeJwtId { get; set; }
 
   /// <summary>
   /// Defines custom claims issued to this client and embedded into access tokens for downstream APIs and resources.

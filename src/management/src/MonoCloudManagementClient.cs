@@ -31,6 +31,11 @@ public class MonoCloudManagementClient
   public LogsClient Logs { get; }
 
   /// <summary>
+  /// Gets the NetworkZonesClient instance to interact with the NetworkZones Api endpoints
+  /// </summary>
+  public NetworkZonesClient NetworkZones { get; }
+
+  /// <summary>
   /// Gets the OptionsClient instance to interact with the Options Api endpoints
   /// </summary>
   public OptionsClient Options { get; }
@@ -61,6 +66,7 @@ public class MonoCloudManagementClient
     Groups = new GroupsClient(configuration);
     Keys = new KeysClient(configuration);
     Logs = new LogsClient(configuration);
+    NetworkZones = new NetworkZonesClient(configuration);
     Options = new OptionsClient(configuration);
     Resources = new ResourcesClient(configuration);
     TrustStores = new TrustStoresClient(configuration);
@@ -79,6 +85,7 @@ public class MonoCloudManagementClient
     Groups = new GroupsClient(httpClient);
     Keys = new KeysClient(httpClient);
     Logs = new LogsClient(httpClient);
+    NetworkZones = new NetworkZonesClient(httpClient);
     Options = new OptionsClient(httpClient);
     Resources = new ResourcesClient(httpClient);
     TrustStores = new TrustStoresClient(httpClient);
