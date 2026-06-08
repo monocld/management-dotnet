@@ -301,19 +301,19 @@ public enum EventCodes
   ApiResourceSecretDeleted,
 
   /// <summary>
-  /// Indicates that a client was granted access to an API resource.
+  /// Indicates that an API access policy was created.
   /// </summary>
-  ApiResourceClientCreated,
+  ApiAccessPolicyCreated,
 
   /// <summary>
-  /// Indicates that a client's access configuration for an API resource was updated.
+  /// Indicates that an API access policy was updated.
   /// </summary>
-  ApiResourceClientUpdated,
+  ApiAccessPolicyUpdated,
 
   /// <summary>
-  /// Indicates that a client's access to an API resource was removed.
+  /// Indicates that an API access policy was deleted.
   /// </summary>
-  ApiResourceClientRemoved,
+  ApiAccessPolicyDeleted,
 
   /// <summary>
   /// Indicates that a trust store was created.
@@ -428,7 +428,22 @@ public enum EventCodes
   /// <summary>
   /// Indicates that a usage threshold was reached.
   /// </summary>
-  UsageThresholdReached
+  UsageThresholdReached,
+
+  /// <summary>
+  /// Indicates that a network zone was created.
+  /// </summary>
+  NetworkZoneCreated,
+
+  /// <summary>
+  /// Indicates that a network zone was updated.
+  /// </summary>
+  NetworkZoneUpdated,
+
+  /// <summary>
+  /// Indicates that a network zone was deleted.
+  /// </summary>
+  NetworkZoneDeleted
 }
 
 

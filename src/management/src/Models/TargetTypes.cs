@@ -101,6 +101,11 @@ public enum TargetTypes
   ApiScope,
 
   /// <summary>
+  /// A Network Zone.
+  /// </summary>
+  NetworkZone,
+
+  /// <summary>
   /// A cryptographic key material.
   /// </summary>
   KeyMaterial,
@@ -108,7 +113,12 @@ public enum TargetTypes
   /// <summary>
   /// The system.
   /// </summary>
-  System
+  System,
+
+  /// <summary>
+  /// An API access policy.
+  /// </summary>
+  ApiAccessPolicy
 }
 
 

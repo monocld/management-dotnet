@@ -80,7 +80,7 @@ public class ClientsClient : MonoCloudClientBase
   /// Create a application
   /// </summary>
   /// <remarks>
-  /// Creates a new application application with the specified configuration, including redirect URIs, authentication flows, and access settings.
+  /// Creates a new application with the specified configuration, including redirect URIs, authentication flows, and access settings.
   /// </remarks>>
   /// <param name="createApplicationRequest">The request payload used to create a application.</param>
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>

@@ -26,16 +26,38 @@ public class CreateApiResourceRequest
   public string Audience { get; set; }
 
   /// <summary>
-  /// Specifies whether access tokens issued for this resource must be exclusive and not shared with other API resources.
+  /// Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.
   /// </summary>
-  /// <note>ScaleX subscription required to use resource isolation.</note>
-  public bool? RequireExclusiveToken { get; set; }
+  /// <note>ScaleX subscription required to allow multi-audience tokens.</note>
+  public bool? AllowMultiAudience { get; set; }
 
   /// <summary>
-  /// Specifies whether access tokens issued for this resource may include identity scopes, allowing them to be used with identity-related endpoints such as &#x60;UserInfo&#x60;.
+  /// Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as &#x60;UserInfo&#x60;. Used when no matching API access policy provides an override.
   /// </summary>
-  /// <note>ScaleX subscription required to use resource isolation.</note>
-  public bool? EnableIdentityAccess { get; set; }
+  /// <note>ScaleX subscription required to allow UserInfo access.</note>
+  public bool? AllowUserInfoAccess { get; set; }
+
+  /// <summary>
+  /// Default access token type for this API resource. Used when no matching API access policy provides an override.
+  /// </summary>
+  public AccessTokenTypes? AccessTokenType { get; set; }
+
+  /// <summary>
+  /// Default access token lifetime (in seconds) for this API resource. Used when no matching API access policy provides an override.
+  /// </summary>
+  public int? AccessTokenLifetime { get; set; }
+
+  /// <summary>
+  /// Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.
+  /// </summary>
+  /// <note>ScaleX subscription required to use session binding.</note>
+  public bool? BindTokensToSession { get; set; }
+
+  /// <summary>
+  /// Determines whether access tokens issued for this API resource include a unique token identifier (jti).
+  /// </summary>
+  /// <note>Recommended for auditing, correlation, and replay-detection.</note>
+  public bool? IncludeJwtId { get; set; }
 
   /// <summary>
   /// List of user claim types that will be embedded into access tokens issued for this API resource.
