@@ -1,5 +1,11 @@
 # @monocloud/management-dotnet
 
+## 0.2.8
+
+### Patch Changes
+
+- b9841f2: - Add network zones, API access policies, and S3 trust store sources to management SDK
+
 ## 0.2.7
 
 ### Patch Changes
