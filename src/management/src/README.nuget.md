@@ -53,11 +53,11 @@ var managementClient = new MonoCloudManagementClient(new MonoCloudConfig("https:
 #### Example - Get all clients
 
 ```csharp
-var result = await managementClient.Clients.GetAllClientsAsync(
+var result = await managementClient.Clients.GetAllApplicationsAsync(
     page: 1,
     size: 10,
     filter: "dashboard",
-    sort: "name:1"
+    sort: "client_name:1"
 );
 ```
 

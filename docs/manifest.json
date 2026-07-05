@@ -32,6 +32,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Clients.FeatureFlagsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Clients.FeatureFlagsClient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Clients.FeatureFlagsClient",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Clients.FeatureFlagsClient.yml\" sourcestartlinenumber=\"1\">Represents a collection of functions to interact with the FeatureFlags Api endpoints</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Clients.GroupsClient.yml",
       "output": {
         ".html": {
@@ -1068,6 +1082,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BanTrustStoreSvidRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BanTrustStoreSvidRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BanTrustStoreSvidRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BanTrustStoreSvidRequest.yml\" sourcestartlinenumber=\"1\">Ban Trust Store SVID Request: Defines a SPIFFE SVID that is blocked from authentication within a trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.BannedCertificate.yml",
       "output": {
         ".html": {
@@ -1096,6 +1124,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BannedSvid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BannedSvid.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BannedSvid",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BannedSvid.yml\" sourcestartlinenumber=\"1\">Banned SVID Response: Represents a SVID that has been explicitly banned within a trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BaseCertificateRevocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BaseCertificateRevocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BaseCertificateRevocation",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BaseCertificateRevocation.yml\" sourcestartlinenumber=\"1\">Base Certificate Revocation Response: Represents a base certificate revocation list (CRL) configured for offline revocation checking within a trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.BasicApiAccessPolicy.yml",
       "output": {
         ".html": {
@@ -1107,6 +1163,34 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.BasicApiAccessPolicy",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BasicApiAccessPolicy.yml\" sourcestartlinenumber=\"1\">Basic API Access Policy Response: Represents a basic API access policy defined using structured conditions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BearerMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BearerMethods.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BearerMethods",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BearerMethods.yml\" sourcestartlinenumber=\"1\">The supported methods of sending a bearer access token to a protected resource (RFC 6750 / RFC 9728 <code sourcefile=\"api/MonoCloud.Management.Models.BearerMethods.yml\" sourcestartlinenumber=\"1\">bearer_methods_supported</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.BundleEndpointProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.BundleEndpointProfile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.BundleEndpointProfile",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.BundleEndpointProfile.yml\" sourcestartlinenumber=\"1\">The authentication profile used to connect to a SPIFFE bundle endpoint.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1177,6 +1261,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.ClientGroup",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ClientGroup.yml\" sourcestartlinenumber=\"1\">Client Group Response: Represents the association between a client and a group.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ClientIdMetadataDocumentOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ClientIdMetadataDocumentOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ClientIdMetadataDocumentOptions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ClientIdMetadataDocumentOptions.yml\" sourcestartlinenumber=\"1\">Client ID Metadata Document Options Response: Represents the tenant-wide CIMD configuration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1376,6 +1474,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorConnectionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorConnectionRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateExternalAuthenticatorConnectionRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateExternalAuthenticatorConnectionRequest.yml\" sourcestartlinenumber=\"1\">Create External Authenticator Connection Request: The protocol connection settings used to communicate with the external identity provider.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorCredentialsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorCredentialsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateExternalAuthenticatorCredentialsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateExternalAuthenticatorCredentialsRequest.yml\" sourcestartlinenumber=\"1\">Create External Authenticator Credentials Request: The client credentials issued by the external identity provider.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateExternalAuthenticatorRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateExternalAuthenticatorRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateExternalAuthenticatorRequest.yml\" sourcestartlinenumber=\"1\">Create External Authenticator Request: Used to create an external authenticator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.CreateGroupRequest.yml",
       "output": {
         ".html": {
@@ -1401,6 +1541,34 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.CreateIpNetworkZoneRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateIpNetworkZoneRequest.yml\" sourcestartlinenumber=\"1\">Create IP Network Zone Request: Used to create an IP network zone.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreatePkiTrustStoreOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreatePkiTrustStoreOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreatePkiTrustStoreOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreatePkiTrustStoreOptionsRequest.yml\" sourcestartlinenumber=\"1\">Create Trust Store Options Request: Defines certificate validation, revocation checking, and caching behavior applied when authenticating client certificates via mTLS.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreatePkiTrustStoreRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreatePkiTrustStoreRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreatePkiTrustStoreRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreatePkiTrustStoreRequest.yml\" sourcestartlinenumber=\"1\">Create PKI Trust Store Request: Creates a trust store used to manage trusted certificate authorities for mTLS authentication.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1488,6 +1656,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateSpiffeTrustStoreOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateSpiffeTrustStoreOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateSpiffeTrustStoreOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateSpiffeTrustStoreOptionsRequest.yml\" sourcestartlinenumber=\"1\">Create SPIFFE Trust Store Options Request: Defines validation and caching behavior applied when authenticating SVIDs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.CreateSpiffeTrustStoreRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.CreateSpiffeTrustStoreRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.CreateSpiffeTrustStoreRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.CreateSpiffeTrustStoreRequest.yml\" sourcestartlinenumber=\"1\">Create SPIFFE Trust Store Request: Creates a trust store for a federated SPIFFE trust domain and its workload identities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.CreateTrustStoreOptionsRequest.yml",
       "output": {
         ".html": {
@@ -1558,6 +1754,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.DeltaCertificateRevocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.DeltaCertificateRevocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.DeltaCertificateRevocation",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.DeltaCertificateRevocation.yml\" sourcestartlinenumber=\"1\">Delta Certificate Revocation Response: Represents a delta certificate revocation list (CRL) configured for offline revocation checking within a trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.DisableUserRequest.yml",
       "output": {
         ".html": {
@@ -1583,6 +1793,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.DiscordAuthenticatorOptions",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.DiscordAuthenticatorOptions.yml\" sourcestartlinenumber=\"1\">Discord Authenticator Options Response: Represents the Sign in with Discord authentication configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.DynamicApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.DynamicApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.DynamicApplication",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.DynamicApplication.yml\" sourcestartlinenumber=\"1\">DynamicApplication: Represents a client application created through dynamic client registration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.DynamicClientRegistrationModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.DynamicClientRegistrationModes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.DynamicClientRegistrationModes",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.DynamicClientRegistrationModes.yml\" sourcestartlinenumber=\"1\">Controls how the dynamic client registration endpoint accepts requests.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.DynamicClientRegistrationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.DynamicClientRegistrationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.DynamicClientRegistrationOptions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.DynamicClientRegistrationOptions.yml\" sourcestartlinenumber=\"1\">Dynamic Client Registration Options Response: Represents the current dynamic client registration configuration for the tenant.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1695,6 +1947,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.ExpirationTypes",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ExpirationTypes.yml\" sourcestartlinenumber=\"1\">The expiration type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ExternalAuthenticator",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ExternalAuthenticator.yml\" sourcestartlinenumber=\"1\">External Authenticator Response: Represents the configuration of an external authenticator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticatorConnectionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticatorConnectionResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ExternalAuthenticatorConnectionResponse",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ExternalAuthenticatorConnectionResponse.yml\" sourcestartlinenumber=\"1\">External Authenticator Connection Response: The protocol connection settings used to communicate with the external identity provider.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticatorCredentialsResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ExternalAuthenticatorCredentialsResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ExternalAuthenticatorCredentialsResponse",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ExternalAuthenticatorCredentialsResponse.yml\" sourcestartlinenumber=\"1\">External Authenticator Credentials Response: The client credentials issued by the external identity provider.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1824,6 +2118,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.HttpFeatureFlagResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.HttpFeatureFlagResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.HttpFeatureFlagResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.HttpSetFeatureFlagRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.HttpSetFeatureFlagRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.HttpSetFeatureFlagRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.HttpUserAddressRequest.yml",
       "output": {
         ".html": {
@@ -1835,6 +2157,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.HttpUserAddressRequest",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ICertificateRevocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ICertificateRevocation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ICertificateRevocation",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ICertificateRevocation.yml\" sourcestartlinenumber=\"1\">Certificate Revocation Response: Represents a certificate revocation list (CRL) configured for offline revocation checking within a trust store.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2090,6 +2426,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.MfaOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.MfaOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.MfaOptions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.MfaOptions.yml\" sourcestartlinenumber=\"1\">MFA Options Response: Represents the tenant's multi-factor authentication configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.MicrosoftAuthenticatorOptions.yml",
       "output": {
         ".html": {
@@ -2129,6 +2479,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.NetworkZoneOperator",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.OidcPkceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.OidcPkceMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.OidcPkceMode",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.OidcPkceMode.yml\" sourcestartlinenumber=\"1\">The PKCE mode used with an external OIDC provider.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2454,6 +2818,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchClientIdMetadataDocumentOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchClientIdMetadataDocumentOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchClientIdMetadataDocumentOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchClientIdMetadataDocumentOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Client ID Metadata Document Options Request: Used to update tenant-wide CIMD configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PatchClientRequest.yml",
       "output": {
         ".html": {
@@ -2580,6 +2958,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchDynamicClientRegistrationOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchDynamicClientRegistrationOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchDynamicClientRegistrationOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchDynamicClientRegistrationOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Dynamic Client Registration Options Request: Used to update the dynamic client registration configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PatchEmailAuthenticatorOptionsRequest.yml",
       "output": {
         ".html": {
@@ -2633,6 +3025,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.PatchEmailIdentifierVerificationOptionsRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchEmailIdentifierVerificationOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Email Identifier Verification Options Request: Used to update email address verification settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorConnectionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorConnectionRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchExternalAuthenticatorConnectionRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchExternalAuthenticatorConnectionRequest.yml\" sourcestartlinenumber=\"1\">Patch External Authenticator Connection Request: Used to update connection settings used by an external authenticator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorCredentialsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorCredentialsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchExternalAuthenticatorCredentialsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchExternalAuthenticatorCredentialsRequest.yml\" sourcestartlinenumber=\"1\">Patch External Authenticator Credentials Request: Used to update client credentials used by an external authenticator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchExternalAuthenticatorRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchExternalAuthenticatorRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchExternalAuthenticatorRequest.yml\" sourcestartlinenumber=\"1\">Patch External Authenticator Request: Used to update an external authenticator's configuration.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2762,6 +3196,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchMfaOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchMfaOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchMfaOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchMfaOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch MFA Options Request: Used to update the tenant's multi-factor authentication configuration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PatchMicrosoftAuthenticatorOptionsRequest.yml",
       "output": {
         ".html": {
@@ -2885,6 +3333,48 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.PatchPhoneIdentifierVerificationOptionsRequest",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchPhoneIdentifierVerificationOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Phone Identifier Verification Options Request: Used to update phone number verification settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchPkiTrustStoreOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchPkiTrustStoreOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchPkiTrustStoreOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchPkiTrustStoreOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch Trust Store Options Request: Used to update one or more configuration properties of an existing trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchPkiTrustStoreRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchPkiTrustStoreRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchPkiTrustStoreRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchPkiTrustStoreRequest.yml\" sourcestartlinenumber=\"1\">Patch PKI Trust Store Request: Used to update one or more properties of an existing PKI trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchProtectedResourceMetadataRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchProtectedResourceMetadataRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchProtectedResourceMetadataRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchProtectedResourceMetadataRequest.yml\" sourcestartlinenumber=\"1\">Request body for updating the OAuth 2.0 Protected Resource Metadata (RFC 9728) configuration of an API resource. When supplied, the entire configuration object is replaced.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3070,6 +3560,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchSpiffeTrustStoreOptionsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchSpiffeTrustStoreOptionsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchSpiffeTrustStoreOptionsRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchSpiffeTrustStoreOptionsRequest.yml\" sourcestartlinenumber=\"1\">Patch SPIFFE Trust Store Options Request: Used to update one or more configuration properties of an existing SPIFFE trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PatchSpiffeTrustStoreRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PatchSpiffeTrustStoreRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PatchSpiffeTrustStoreRequest",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PatchSpiffeTrustStoreRequest.yml\" sourcestartlinenumber=\"1\">Patch SPIFFE Trust Store Request: Used to update one or more properties of an existing SPIFFE trust store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PatchTrustStoreOptionsRequest.yml",
       "output": {
         ".html": {
@@ -3182,6 +3700,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PkiTrustStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PkiTrustStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PkiTrustStore",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PkiTrustStore.yml\" sourcestartlinenumber=\"1\">PKI Trust Store Response: Represents a trust store configuration used for mTLS authentication.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PkiTrustStoreOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PkiTrustStoreOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PkiTrustStoreOptions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PkiTrustStoreOptions.yml\" sourcestartlinenumber=\"1\">Trust Store Options Response: Represents the configuration applied for mTLS certificate validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.PkiTrustStoreSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.PkiTrustStoreSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.PkiTrustStoreSummary",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PkiTrustStoreSummary.yml\" sourcestartlinenumber=\"1\">PKI Trust Store Summary Response: A lightweight representation of a trust store used for mTLS authentication, returned in list operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.PolicyTypes.yml",
       "output": {
         ".html": {
@@ -3193,6 +3753,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.PolicyTypes",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.PolicyTypes.yml\" sourcestartlinenumber=\"1\">The policy rule authoring type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.ProtectedResourceMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.ProtectedResourceMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.ProtectedResourceMetadata",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.ProtectedResourceMetadata.yml\" sourcestartlinenumber=\"1\">OAuth 2.0 Protected Resource Metadata (RFC 9728) configuration for an API resource. These settings drive the <code sourcefile=\"api/MonoCloud.Management.Models.ProtectedResourceMetadata.yml\" sourcestartlinenumber=\"1\">/.well-known/oauth-protected-resource</code> document that the resource server hosts on its own origin, and the resource identifier advertised in the authorization server's <code sourcefile=\"api/MonoCloud.Management.Models.ProtectedResourceMetadata.yml\" sourcestartlinenumber=\"1\">protected_resources</code> metadata.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3630,6 +4204,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.SpiffeTrustStore",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.SpiffeTrustStore.yml\" sourcestartlinenumber=\"1\">SPIFFE Trust Store Response: Represents a federated SPIFFE trust domain used to validate workload identities.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStoreOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStoreOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.SpiffeTrustStoreOptions",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.SpiffeTrustStoreOptions.yml\" sourcestartlinenumber=\"1\">SPIFFE Trust Store Options Response: Represents the configuration applied for SVID validation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStoreSummary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.SpiffeTrustStoreSummary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.SpiffeTrustStoreSummary",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.SpiffeTrustStoreSummary.yml\" sourcestartlinenumber=\"1\">SPIFFE Trust Store Summary Response: A lightweight representation of a federated SPIFFE trust domain, returned in list operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.SubjectTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.SubjectTypes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.SubjectTypes",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.SubjectTypes.yml\" sourcestartlinenumber=\"1\">The OIDC subject identifier type used when issuing the <code sourcefile=\"api/MonoCloud.Management.Models.SubjectTypes.yml\" sourcestartlinenumber=\"1\">sub</code> claim to a client.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MonoCloud.Management.Models.TargetTypes.yml",
       "output": {
         ".html": {
@@ -3655,6 +4285,20 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.TechTypes",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.TechTypes.yml\" sourcestartlinenumber=\"1\">The technology type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.TrustEmailModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.TrustEmailModes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.TrustEmailModes",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.TrustEmailModes.yml\" sourcestartlinenumber=\"1\">Determines whether an email received from an external identity provider is treated as verified.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3949,6 +4593,34 @@
       "IsMRef": true,
       "Title": "MonoCloud.Management.Models.UserLockoutTypes",
       "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.UserLockoutTypes.yml\" sourcestartlinenumber=\"1\">The user lockout type.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.UserMfaPasskey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.UserMfaPasskey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.UserMfaPasskey",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.UserMfaPasskey.yml\" sourcestartlinenumber=\"1\">User MFA Passkey: Represents a passkey / security key enrolled by the user as a second factor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MonoCloud.Management.Models.UserMfaTotpAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MonoCloud.Management.Models.UserMfaTotpAuthenticator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MonoCloud.Management.Models.UserMfaTotpAuthenticator",
+      "Summary": "<p sourcefile=\"api/MonoCloud.Management.Models.UserMfaTotpAuthenticator.yml\" sourcestartlinenumber=\"1\">User MFA TOTP Authenticator: Represents a TOTP authenticator enrolled by the user as a second factor.</p>\n"
     },
     {
       "type": "ManagedReference",
