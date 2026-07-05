@@ -51,6 +51,11 @@ public class BasicApiAccessPolicy
   public DateTime LastUpdated { get; set; }
 
   /// <summary>
+  /// Specifies the current version of the policy. Incremented on every update.
+  /// </summary>
+  public int Revision { get; set; }
+
+  /// <summary>
   /// The unique identifier of the client this policy applies to.
   /// </summary>
   public string ClientId { get; set; }

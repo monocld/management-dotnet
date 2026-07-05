@@ -9,7 +9,6 @@ public class PatchPasswordReuseOptionsRequest
   /// <summary>
   /// Specifies the password reuse control policy, defining whether reuse is limited by time, count, both, or unrestricted.
   /// </summary>
-  /// <note>Pro plan required to configure password reuse options.</note>
   public Optional<PasswordRestrictionModes> RestrictionMode { get; set; }
 
   /// <summary>

@@ -46,6 +46,11 @@ public class ApiAccessPolicy
   public DateTime LastUpdated { get; set; }
 
   /// <summary>
+  /// Specifies the current version of the policy. Incremented on every update.
+  /// </summary>
+  public int Revision { get; set; }
+
+  /// <summary>
   /// The unique identifier of the client this policy applies to. Returned for basic policies; &#x60;null&#x60; for advanced policies.
   /// </summary>
   public string? ClientId { get; set; }

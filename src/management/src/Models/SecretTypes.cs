@@ -38,7 +38,17 @@ public enum SecretTypes
   /// <summary>
   /// A shared secret used for JWT-based client assertion authentication.
   /// </summary>
-  JwtAssertionSharedSecret
+  JwtAssertionSharedSecret,
+
+  /// <summary>
+  /// A SPIFFE ID matched against the SVID presented by the workload. May end with a `/*` wildcard matching any path under the prefix.
+  /// </summary>
+  SpiffeId,
+
+  /// <summary>
+  /// A SPIFFE ID matched against the JWT-SVID assertion presented by the workload. May end with a `/*` wildcard matching any path under the prefix.
+  /// </summary>
+  JwtSvidAssertion
 }
 
 
