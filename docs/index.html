@@ -125,11 +125,11 @@ dotnet add package MonoCloud.Management
 <p>Do not hardcode your API key. It is recommended to load it from an environment variable or a secure configuration manager like appsettings.json. For modern .NET applications, it is best practice to use Dependency Injection to manage the client lifecycle and configuration securely via the <a href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/MonoCloudManagementServiceExtensions.cs"><code>AddMonoCloudManagementClient</code></a> service extension.</p>
 </div>
 <h4 id="example---get-all-clients">Example - Get all clients</h4>
-<pre><code class="lang-csharp">var result = await managementClient.Clients.GetAllClientsAsync(
+<pre><code class="lang-csharp">var result = await managementClient.Clients.GetAllApplicationsAsync(
     page: 1,
     size: 10,
     filter: &quot;dashboard&quot;,
-    sort: &quot;name:1&quot;
+    sort: &quot;client_name:1&quot;
 );
 </code></pre>
 <p>Explore further operations at <a href="https://www.monocloud.com/docs?utm_source=github&amp;utm_medium=management_dotnet">https://www.monocloud.com/docs</a></p>
