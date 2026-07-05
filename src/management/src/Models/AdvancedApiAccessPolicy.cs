@@ -56,6 +56,11 @@ public class AdvancedApiAccessPolicy
   public DateTime LastUpdated { get; set; }
 
   /// <summary>
+  /// Specifies the current version of the policy. Incremented on every update.
+  /// </summary>
+  public int Revision { get; set; }
+
+  /// <summary>
   /// Optional denial message returned to the client when this policy rejects a token request. If unset, a generic denial message is returned.
   /// </summary>
   public string? Error { get; set; }

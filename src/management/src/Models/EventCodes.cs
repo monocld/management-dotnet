@@ -351,6 +351,16 @@ public enum EventCodes
   TrustStoreCertificateUnbanned,
 
   /// <summary>
+  /// Indicates that an SVID was banned in the trust store.
+  /// </summary>
+  TrustStoreSvidBanned,
+
+  /// <summary>
+  /// Indicates that a previously banned SVID was unbanned in the trust store.
+  /// </summary>
+  TrustStoreSvidUnbanned,
+
+  /// <summary>
   /// Indicates that a client application was created.
   /// </summary>
   ClientCreated,

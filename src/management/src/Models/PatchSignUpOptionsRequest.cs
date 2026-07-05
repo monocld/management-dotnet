@@ -15,16 +15,19 @@ public class PatchSignUpOptionsRequest
   /// <summary>
   /// Require the user to explicitly agree to the Terms and/or Privacy Policy.
   /// </summary>
+  /// <note>Pro plan required to enable Terms and Privacy Policy.</note>
   public Optional<bool> RequireExplicitUserAgreement { get; set; }
 
   /// <summary>
   /// The URL of the Privacy Policy shown during sign-up.
   /// </summary>
+  /// <note>Pro plan required to enable Terms and Privacy Policy.</note>
   public Optional<string?> PrivacyUrl { get; set; }
 
   /// <summary>
   /// The URL of the Terms of Service shown during sign-up.
   /// </summary>
+  /// <note>Pro plan required to enable Terms and Privacy Policy.</note>
   public Optional<string?> TermsUrl { get; set; }
 
   /// <summary>

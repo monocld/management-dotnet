@@ -35,6 +35,7 @@ public class PatchPasswordAuthenticatorOptionsRequest
   /// <summary>
   /// Password reuse policy configuration.
   /// </summary>
+  /// <note>Pro plan required to customize password history options.</note>
   public Optional<PatchPasswordReuseOptionsRequest> Reuse { get; set; }
 }
 

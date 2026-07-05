@@ -9,6 +9,7 @@ public class PatchCustomSmsBrandingOptionsRequest
   /// <summary>
   /// Custom Liquid template used to render the SMS message content with runtime variables; when empty, the default template is used.
   /// </summary>
+  /// <note>Pro plan is required to use Custom Sms Templates</note>
   public Optional<string?> Template { get; set; }
 }
 
