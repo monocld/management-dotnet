@@ -53,22 +53,7 @@ public enum ExternalAuthenticators
   /// <summary>
   /// Sign in with Xero
   /// </summary>
-  Xero,
-
-  /// <summary>
-  /// Sign in with a custom OIDC provider
-  /// </summary>
-  CustomOidc,
-
-  /// <summary>
-  /// Sign in with a custom enterprise SSO connection
-  /// </summary>
-  CustomEnterprise,
-
-  /// <summary>
-  /// Sign in with Microsoft Entra ID (enterprise)
-  /// </summary>
-  EntraOidc
+  Xero
 }
 
 
