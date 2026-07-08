@@ -58,22 +58,7 @@ public enum IdPs
   /// <summary>
   /// Xero identity provider
   /// </summary>
-  Xero,
-
-  /// <summary>
-  /// Custom OIDC identity provider
-  /// </summary>
-  CustomOidc,
-
-  /// <summary>
-  /// Custom enterprise identity provider
-  /// </summary>
-  CustomEnterprise,
-
-  /// <summary>
-  /// Microsoft Entra ID identity provider
-  /// </summary>
-  EntraOidc
+  Xero
 }
 
 
