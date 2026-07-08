@@ -912,19 +912,6 @@ references:
   fullName.vb: MonoCloud.Management.Clients.OptionsClient.New
   nameWithType: OptionsClient.OptionsClient
   nameWithType.vb: OptionsClient.New
-- uid: MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync(MonoCloud.Management.Models.CreateExternalAuthenticatorRequest,System.Threading.CancellationToken)
-  name: CreateExternalAuthenticatorAsync(CreateExternalAuthenticatorRequest, CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_CreateExternalAuthenticatorAsync_MonoCloud_Management_Models_CreateExternalAuthenticatorRequest_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync(MonoCloud.Management.Models.CreateExternalAuthenticatorRequest,System.Threading.CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync(MonoCloud.Management.Models.CreateExternalAuthenticatorRequest, System.Threading.CancellationToken)
-  nameWithType: OptionsClient.CreateExternalAuthenticatorAsync(CreateExternalAuthenticatorRequest, CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync*
-  name: CreateExternalAuthenticatorAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_CreateExternalAuthenticatorAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync
-  isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.CreateExternalAuthenticatorAsync
-  nameWithType: OptionsClient.CreateExternalAuthenticatorAsync
 - uid: MonoCloud.Management.Clients.OptionsClient.CreateSignUpCustomFieldAsync(MonoCloud.Management.Models.CreateSignUpCustomFieldRequest,System.Threading.CancellationToken)
   name: CreateSignUpCustomFieldAsync(CreateSignUpCustomFieldRequest, CancellationToken)
   href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_CreateSignUpCustomFieldAsync_MonoCloud_Management_Models_CreateSignUpCustomFieldRequest_System_Threading_CancellationToken_
@@ -938,22 +925,6 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Clients.OptionsClient.CreateSignUpCustomFieldAsync
   nameWithType: OptionsClient.CreateSignUpCustomFieldAsync
-- uid: MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync(System.String,System.Threading.CancellationToken)
-  name: DeleteExternalAuthenticatorAsync(string, CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_DeleteExternalAuthenticatorAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync(System.String,System.Threading.CancellationToken)
-  name.vb: DeleteExternalAuthenticatorAsync(String, CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync(string, System.Threading.CancellationToken)
-  fullName.vb: MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync(String, System.Threading.CancellationToken)
-  nameWithType: OptionsClient.DeleteExternalAuthenticatorAsync(string, CancellationToken)
-  nameWithType.vb: OptionsClient.DeleteExternalAuthenticatorAsync(String, CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync*
-  name: DeleteExternalAuthenticatorAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_DeleteExternalAuthenticatorAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync
-  isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.DeleteExternalAuthenticatorAsync
-  nameWithType: OptionsClient.DeleteExternalAuthenticatorAsync
 - uid: MonoCloud.Management.Clients.OptionsClient.DeleteSignUpCustomFieldAsync(System.String,System.Threading.CancellationToken)
   name: DeleteSignUpCustomFieldAsync(string, CancellationToken)
   href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_DeleteSignUpCustomFieldAsync_System_String_System_Threading_CancellationToken_
@@ -996,51 +967,22 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Clients.OptionsClient.FindCommunicationOptionsAsync
   nameWithType: OptionsClient.FindCommunicationOptionsAsync
-- uid: MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync(System.String,System.Threading.CancellationToken)
-  name: FindExternalAuthenticatorAsync(string, CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindExternalAuthenticatorAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync(System.String,System.Threading.CancellationToken)
-  name.vb: FindExternalAuthenticatorAsync(String, CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync(string, System.Threading.CancellationToken)
-  fullName.vb: MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync(String, System.Threading.CancellationToken)
-  nameWithType: OptionsClient.FindExternalAuthenticatorAsync(string, CancellationToken)
-  nameWithType.vb: OptionsClient.FindExternalAuthenticatorAsync(String, CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync*
-  name: FindExternalAuthenticatorAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindExternalAuthenticatorAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync
+- uid: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync(System.String,System.Threading.CancellationToken)
+  name: FindSignUpCustomFieldByNameAsync(string, CancellationToken)
+  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindSignUpCustomFieldByNameAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync(System.String,System.Threading.CancellationToken)
+  name.vb: FindSignUpCustomFieldByNameAsync(String, CancellationToken)
+  fullName: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync(string, System.Threading.CancellationToken)
+  fullName.vb: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync(String, System.Threading.CancellationToken)
+  nameWithType: OptionsClient.FindSignUpCustomFieldByNameAsync(string, CancellationToken)
+  nameWithType.vb: OptionsClient.FindSignUpCustomFieldByNameAsync(String, CancellationToken)
+- uid: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync*
+  name: FindSignUpCustomFieldByNameAsync
+  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindSignUpCustomFieldByNameAsync_
+  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync
   isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.FindExternalAuthenticatorAsync
-  nameWithType: OptionsClient.FindExternalAuthenticatorAsync
-- uid: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync(System.String,System.Threading.CancellationToken)
-  name: FindSignUpCustomFieldAsync(string, CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindSignUpCustomFieldAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync(System.String,System.Threading.CancellationToken)
-  name.vb: FindSignUpCustomFieldAsync(String, CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync(string, System.Threading.CancellationToken)
-  fullName.vb: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync(String, System.Threading.CancellationToken)
-  nameWithType: OptionsClient.FindSignUpCustomFieldAsync(string, CancellationToken)
-  nameWithType.vb: OptionsClient.FindSignUpCustomFieldAsync(String, CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync*
-  name: FindSignUpCustomFieldAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_FindSignUpCustomFieldAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync
-  isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldAsync
-  nameWithType: OptionsClient.FindSignUpCustomFieldAsync
-- uid: MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync(System.Threading.CancellationToken)
-  name: GetAllExternalAuthenticatorsAsync(CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_GetAllExternalAuthenticatorsAsync_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync(System.Threading.CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync(System.Threading.CancellationToken)
-  nameWithType: OptionsClient.GetAllExternalAuthenticatorsAsync(CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync*
-  name: GetAllExternalAuthenticatorsAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_GetAllExternalAuthenticatorsAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync
-  isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.GetAllExternalAuthenticatorsAsync
-  nameWithType: OptionsClient.GetAllExternalAuthenticatorsAsync
+  fullName: MonoCloud.Management.Clients.OptionsClient.FindSignUpCustomFieldByNameAsync
+  nameWithType: OptionsClient.FindSignUpCustomFieldByNameAsync
 - uid: MonoCloud.Management.Clients.OptionsClient.GetAllSignUpCustomFieldsAsync(System.Threading.CancellationToken)
   name: GetAllSignUpCustomFieldsAsync(CancellationToken)
   href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_GetAllSignUpCustomFieldsAsync_System_Threading_CancellationToken_
@@ -1080,22 +1022,6 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Clients.OptionsClient.PatchCommunicationOptionsAsync
   nameWithType: OptionsClient.PatchCommunicationOptionsAsync
-- uid: MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync(System.String,MonoCloud.Management.Models.PatchExternalAuthenticatorRequest,System.Threading.CancellationToken)
-  name: PatchExternalAuthenticatorAsync(string, PatchExternalAuthenticatorRequest, CancellationToken)
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_PatchExternalAuthenticatorAsync_System_String_MonoCloud_Management_Models_PatchExternalAuthenticatorRequest_System_Threading_CancellationToken_
-  commentId: M:MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync(System.String,MonoCloud.Management.Models.PatchExternalAuthenticatorRequest,System.Threading.CancellationToken)
-  name.vb: PatchExternalAuthenticatorAsync(String, PatchExternalAuthenticatorRequest, CancellationToken)
-  fullName: MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync(string, MonoCloud.Management.Models.PatchExternalAuthenticatorRequest, System.Threading.CancellationToken)
-  fullName.vb: MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync(String, MonoCloud.Management.Models.PatchExternalAuthenticatorRequest, System.Threading.CancellationToken)
-  nameWithType: OptionsClient.PatchExternalAuthenticatorAsync(string, PatchExternalAuthenticatorRequest, CancellationToken)
-  nameWithType.vb: OptionsClient.PatchExternalAuthenticatorAsync(String, PatchExternalAuthenticatorRequest, CancellationToken)
-- uid: MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync*
-  name: PatchExternalAuthenticatorAsync
-  href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_PatchExternalAuthenticatorAsync_
-  commentId: Overload:MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync
-  isSpec: "True"
-  fullName: MonoCloud.Management.Clients.OptionsClient.PatchExternalAuthenticatorAsync
-  nameWithType: OptionsClient.PatchExternalAuthenticatorAsync
 - uid: MonoCloud.Management.Clients.OptionsClient.PatchSignUpCustomFieldAsync(System.String,MonoCloud.Management.Models.PatchSignUpCustomFieldRequest,System.Threading.CancellationToken)
   name: PatchSignUpCustomFieldAsync(string, PatchSignUpCustomFieldRequest, CancellationToken)
   href: api/MonoCloud.Management.Clients.OptionsClient.html#MonoCloud_Management_Clients_OptionsClient_PatchSignUpCustomFieldAsync_System_String_MonoCloud_Management_Models_PatchSignUpCustomFieldRequest_System_Threading_CancellationToken_
@@ -6743,6 +6669,32 @@ references:
   commentId: T:MonoCloud.Management.Models.AuthenticatorOptions
   fullName: MonoCloud.Management.Models.AuthenticatorOptions
   nameWithType: AuthenticatorOptions
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Apple
+  name: Apple
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Apple
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Apple
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Apple
+  nameWithType: AuthenticatorOptions.Apple
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Apple*
+  name: Apple
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Apple_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Apple
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Apple
+  nameWithType: AuthenticatorOptions.Apple
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Discord
+  name: Discord
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Discord
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Discord
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Discord
+  nameWithType: AuthenticatorOptions.Discord
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Discord*
+  name: Discord
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Discord_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Discord
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Discord
+  nameWithType: AuthenticatorOptions.Discord
 - uid: MonoCloud.Management.Models.AuthenticatorOptions.Email
   name: Email
   href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Email
@@ -6769,6 +6721,97 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsFirst
   nameWithType: AuthenticatorOptions.ExternalSignInMethodsFirst
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder
+  name: ExternalSignInMethodsOrder
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_ExternalSignInMethodsOrder
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder
+  nameWithType: AuthenticatorOptions.ExternalSignInMethodsOrder
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder*
+  name: ExternalSignInMethodsOrder
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_ExternalSignInMethodsOrder_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.ExternalSignInMethodsOrder
+  nameWithType: AuthenticatorOptions.ExternalSignInMethodsOrder
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Facebook
+  name: Facebook
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Facebook
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Facebook
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Facebook
+  nameWithType: AuthenticatorOptions.Facebook
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Facebook*
+  name: Facebook
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Facebook_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Facebook
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Facebook
+  nameWithType: AuthenticatorOptions.Facebook
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Github
+  name: Github
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Github
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Github
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Github
+  nameWithType: AuthenticatorOptions.Github
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Github*
+  name: Github
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Github_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Github
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Github
+  nameWithType: AuthenticatorOptions.Github
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Gitlab
+  name: Gitlab
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Gitlab
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Gitlab
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Gitlab
+  nameWithType: AuthenticatorOptions.Gitlab
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Gitlab*
+  name: Gitlab
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Gitlab_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Gitlab
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Gitlab
+  nameWithType: AuthenticatorOptions.Gitlab
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Google
+  name: Google
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Google
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Google
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Google
+  nameWithType: AuthenticatorOptions.Google
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Google*
+  name: Google
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Google_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Google
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Google
+  nameWithType: AuthenticatorOptions.Google
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Linkedin
+  name: Linkedin
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Linkedin
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Linkedin
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Linkedin
+  nameWithType: AuthenticatorOptions.Linkedin
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Linkedin*
+  name: Linkedin
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Linkedin_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Linkedin
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Linkedin
+  nameWithType: AuthenticatorOptions.Linkedin
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Microsoft
+  name: Microsoft
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Microsoft
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Microsoft
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Microsoft
+  nameWithType: AuthenticatorOptions.Microsoft
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Microsoft*
+  name: Microsoft
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Microsoft_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Microsoft
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Microsoft
+  nameWithType: AuthenticatorOptions.Microsoft
 - uid: MonoCloud.Management.Models.AuthenticatorOptions.Passkey
   name: Passkey
   href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Passkey
@@ -6808,6 +6851,32 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.AuthenticatorOptions.Phone
   nameWithType: AuthenticatorOptions.Phone
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Twitter
+  name: Twitter
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Twitter
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Twitter
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Twitter
+  nameWithType: AuthenticatorOptions.Twitter
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Twitter*
+  name: Twitter
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Twitter_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Twitter
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Twitter
+  nameWithType: AuthenticatorOptions.Twitter
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Xero
+  name: Xero
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Xero
+  commentId: P:MonoCloud.Management.Models.AuthenticatorOptions.Xero
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Xero
+  nameWithType: AuthenticatorOptions.Xero
+- uid: MonoCloud.Management.Models.AuthenticatorOptions.Xero*
+  name: Xero
+  href: api/MonoCloud.Management.Models.AuthenticatorOptions.html#MonoCloud_Management_Models_AuthenticatorOptions_Xero_
+  commentId: Overload:MonoCloud.Management.Models.AuthenticatorOptions.Xero
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.AuthenticatorOptions.Xero
+  nameWithType: AuthenticatorOptions.Xero
 - uid: MonoCloud.Management.Models.Authenticators
   name: Authenticators
   href: api/MonoCloud.Management.Models.Authenticators.html
@@ -6820,18 +6889,6 @@ references:
   commentId: F:MonoCloud.Management.Models.Authenticators.Apple
   fullName: MonoCloud.Management.Models.Authenticators.Apple
   nameWithType: Authenticators.Apple
-- uid: MonoCloud.Management.Models.Authenticators.CustomEnterprise
-  name: CustomEnterprise
-  href: api/MonoCloud.Management.Models.Authenticators.html#MonoCloud_Management_Models_Authenticators_CustomEnterprise
-  commentId: F:MonoCloud.Management.Models.Authenticators.CustomEnterprise
-  fullName: MonoCloud.Management.Models.Authenticators.CustomEnterprise
-  nameWithType: Authenticators.CustomEnterprise
-- uid: MonoCloud.Management.Models.Authenticators.CustomOidc
-  name: CustomOidc
-  href: api/MonoCloud.Management.Models.Authenticators.html#MonoCloud_Management_Models_Authenticators_CustomOidc
-  commentId: F:MonoCloud.Management.Models.Authenticators.CustomOidc
-  fullName: MonoCloud.Management.Models.Authenticators.CustomOidc
-  nameWithType: Authenticators.CustomOidc
 - uid: MonoCloud.Management.Models.Authenticators.Discord
   name: Discord
   href: api/MonoCloud.Management.Models.Authenticators.html#MonoCloud_Management_Models_Authenticators_Discord
@@ -6844,12 +6901,6 @@ references:
   commentId: F:MonoCloud.Management.Models.Authenticators.Email
   fullName: MonoCloud.Management.Models.Authenticators.Email
   nameWithType: Authenticators.Email
-- uid: MonoCloud.Management.Models.Authenticators.EntraOidc
-  name: EntraOidc
-  href: api/MonoCloud.Management.Models.Authenticators.html#MonoCloud_Management_Models_Authenticators_EntraOidc
-  commentId: F:MonoCloud.Management.Models.Authenticators.EntraOidc
-  fullName: MonoCloud.Management.Models.Authenticators.EntraOidc
-  nameWithType: Authenticators.EntraOidc
 - uid: MonoCloud.Management.Models.Authenticators.Facebook
   name: Facebook
   href: api/MonoCloud.Management.Models.Authenticators.html#MonoCloud_Management_Models_Authenticators_Facebook
@@ -15140,30 +15191,12 @@ references:
   commentId: F:MonoCloud.Management.Models.ExternalAuthenticators.Apple
   fullName: MonoCloud.Management.Models.ExternalAuthenticators.Apple
   nameWithType: ExternalAuthenticators.Apple
-- uid: MonoCloud.Management.Models.ExternalAuthenticators.CustomEnterprise
-  name: CustomEnterprise
-  href: api/MonoCloud.Management.Models.ExternalAuthenticators.html#MonoCloud_Management_Models_ExternalAuthenticators_CustomEnterprise
-  commentId: F:MonoCloud.Management.Models.ExternalAuthenticators.CustomEnterprise
-  fullName: MonoCloud.Management.Models.ExternalAuthenticators.CustomEnterprise
-  nameWithType: ExternalAuthenticators.CustomEnterprise
-- uid: MonoCloud.Management.Models.ExternalAuthenticators.CustomOidc
-  name: CustomOidc
-  href: api/MonoCloud.Management.Models.ExternalAuthenticators.html#MonoCloud_Management_Models_ExternalAuthenticators_CustomOidc
-  commentId: F:MonoCloud.Management.Models.ExternalAuthenticators.CustomOidc
-  fullName: MonoCloud.Management.Models.ExternalAuthenticators.CustomOidc
-  nameWithType: ExternalAuthenticators.CustomOidc
 - uid: MonoCloud.Management.Models.ExternalAuthenticators.Discord
   name: Discord
   href: api/MonoCloud.Management.Models.ExternalAuthenticators.html#MonoCloud_Management_Models_ExternalAuthenticators_Discord
   commentId: F:MonoCloud.Management.Models.ExternalAuthenticators.Discord
   fullName: MonoCloud.Management.Models.ExternalAuthenticators.Discord
   nameWithType: ExternalAuthenticators.Discord
-- uid: MonoCloud.Management.Models.ExternalAuthenticators.EntraOidc
-  name: EntraOidc
-  href: api/MonoCloud.Management.Models.ExternalAuthenticators.html#MonoCloud_Management_Models_ExternalAuthenticators_EntraOidc
-  commentId: F:MonoCloud.Management.Models.ExternalAuthenticators.EntraOidc
-  fullName: MonoCloud.Management.Models.ExternalAuthenticators.EntraOidc
-  nameWithType: ExternalAuthenticators.EntraOidc
 - uid: MonoCloud.Management.Models.ExternalAuthenticators.Facebook
   name: Facebook
   href: api/MonoCloud.Management.Models.ExternalAuthenticators.html#MonoCloud_Management_Models_ExternalAuthenticators_Facebook
@@ -16215,30 +16248,12 @@ references:
   commentId: F:MonoCloud.Management.Models.IdPs.Apple
   fullName: MonoCloud.Management.Models.IdPs.Apple
   nameWithType: IdPs.Apple
-- uid: MonoCloud.Management.Models.IdPs.CustomEnterprise
-  name: CustomEnterprise
-  href: api/MonoCloud.Management.Models.IdPs.html#MonoCloud_Management_Models_IdPs_CustomEnterprise
-  commentId: F:MonoCloud.Management.Models.IdPs.CustomEnterprise
-  fullName: MonoCloud.Management.Models.IdPs.CustomEnterprise
-  nameWithType: IdPs.CustomEnterprise
-- uid: MonoCloud.Management.Models.IdPs.CustomOidc
-  name: CustomOidc
-  href: api/MonoCloud.Management.Models.IdPs.html#MonoCloud_Management_Models_IdPs_CustomOidc
-  commentId: F:MonoCloud.Management.Models.IdPs.CustomOidc
-  fullName: MonoCloud.Management.Models.IdPs.CustomOidc
-  nameWithType: IdPs.CustomOidc
 - uid: MonoCloud.Management.Models.IdPs.Discord
   name: Discord
   href: api/MonoCloud.Management.Models.IdPs.html#MonoCloud_Management_Models_IdPs_Discord
   commentId: F:MonoCloud.Management.Models.IdPs.Discord
   fullName: MonoCloud.Management.Models.IdPs.Discord
   nameWithType: IdPs.Discord
-- uid: MonoCloud.Management.Models.IdPs.EntraOidc
-  name: EntraOidc
-  href: api/MonoCloud.Management.Models.IdPs.html#MonoCloud_Management_Models_IdPs_EntraOidc
-  commentId: F:MonoCloud.Management.Models.IdPs.EntraOidc
-  fullName: MonoCloud.Management.Models.IdPs.EntraOidc
-  nameWithType: IdPs.EntraOidc
 - uid: MonoCloud.Management.Models.IdPs.Facebook
   name: Facebook
   href: api/MonoCloud.Management.Models.IdPs.html#MonoCloud_Management_Models_IdPs_Facebook
@@ -19865,6 +19880,32 @@ references:
   commentId: T:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest
   fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest
   nameWithType: PatchAuthenticatorOptionsRequest
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple
+  name: Apple
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Apple
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple
+  nameWithType: PatchAuthenticatorOptionsRequest.Apple
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple*
+  name: Apple
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Apple_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Apple
+  nameWithType: PatchAuthenticatorOptionsRequest.Apple
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord
+  name: Discord
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Discord
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord
+  nameWithType: PatchAuthenticatorOptionsRequest.Discord
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord*
+  name: Discord
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Discord_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Discord
+  nameWithType: PatchAuthenticatorOptionsRequest.Discord
 - uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Email
   name: Email
   href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Email
@@ -19891,6 +19932,97 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsFirst
   nameWithType: PatchAuthenticatorOptionsRequest.ExternalSignInMethodsFirst
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+  name: ExternalSignInMethodsOrder
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_ExternalSignInMethodsOrder
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+  nameWithType: PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder*
+  name: ExternalSignInMethodsOrder
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_ExternalSignInMethodsOrder_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+  nameWithType: PatchAuthenticatorOptionsRequest.ExternalSignInMethodsOrder
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook
+  name: Facebook
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Facebook
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook
+  nameWithType: PatchAuthenticatorOptionsRequest.Facebook
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook*
+  name: Facebook
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Facebook_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Facebook
+  nameWithType: PatchAuthenticatorOptionsRequest.Facebook
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github
+  name: Github
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Github
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github
+  nameWithType: PatchAuthenticatorOptionsRequest.Github
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github*
+  name: Github
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Github_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Github
+  nameWithType: PatchAuthenticatorOptionsRequest.Github
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab
+  name: Gitlab
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Gitlab
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab
+  nameWithType: PatchAuthenticatorOptionsRequest.Gitlab
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab*
+  name: Gitlab
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Gitlab_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Gitlab
+  nameWithType: PatchAuthenticatorOptionsRequest.Gitlab
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google
+  name: Google
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Google
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google
+  nameWithType: PatchAuthenticatorOptionsRequest.Google
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google*
+  name: Google
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Google_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Google
+  nameWithType: PatchAuthenticatorOptionsRequest.Google
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin
+  name: Linkedin
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Linkedin
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin
+  nameWithType: PatchAuthenticatorOptionsRequest.Linkedin
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin*
+  name: Linkedin
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Linkedin_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Linkedin
+  nameWithType: PatchAuthenticatorOptionsRequest.Linkedin
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft
+  name: Microsoft
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Microsoft
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft
+  nameWithType: PatchAuthenticatorOptionsRequest.Microsoft
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft*
+  name: Microsoft
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Microsoft_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Microsoft
+  nameWithType: PatchAuthenticatorOptionsRequest.Microsoft
 - uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Passkey
   name: Passkey
   href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Passkey
@@ -19930,6 +20062,32 @@ references:
   isSpec: "True"
   fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Phone
   nameWithType: PatchAuthenticatorOptionsRequest.Phone
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter
+  name: Twitter
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Twitter
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter
+  nameWithType: PatchAuthenticatorOptionsRequest.Twitter
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter*
+  name: Twitter
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Twitter_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Twitter
+  nameWithType: PatchAuthenticatorOptionsRequest.Twitter
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero
+  name: Xero
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Xero
+  commentId: P:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero
+  nameWithType: PatchAuthenticatorOptionsRequest.Xero
+- uid: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero*
+  name: Xero
+  href: api/MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.html#MonoCloud_Management_Models_PatchAuthenticatorOptionsRequest_Xero_
+  commentId: Overload:MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero
+  isSpec: "True"
+  fullName: MonoCloud.Management.Models.PatchAuthenticatorOptionsRequest.Xero
+  nameWithType: PatchAuthenticatorOptionsRequest.Xero
 - uid: MonoCloud.Management.Models.PatchClaimResourceRequest
   name: PatchClaimResourceRequest
   href: api/MonoCloud.Management.Models.PatchClaimResourceRequest.html
