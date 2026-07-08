@@ -228,7 +228,7 @@ public class OptionsClient : MonoCloudClientBase
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
   /// <returns>SignUpCustomField</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<SignUpCustomField>> FindSignUpCustomFieldAsync(string claimName, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<SignUpCustomField>> FindSignUpCustomFieldByNameAsync(string claimName, CancellationToken cancellationToken = default)
   {
     if (claimName == null)
     {
