@@ -245,7 +245,7 @@ public class PatchApplicationRequest
   /// Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.
   /// </summary>
   /// <note>Pro plan subscription required to enable authenticator restrictions.</note>
-  public Optional<List<Authenticators>> AuthenticatorRestrictions { get; set; }
+  public Optional<List<string>> AuthenticatorRestrictions { get; set; }
 
   /// <summary>
   /// Defines custom claims issued to this client and embedded into access tokens for downstream APIs and resources.
