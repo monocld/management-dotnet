@@ -71,7 +71,7 @@ Enforced by `.editorconfig` + `dotnet format`:
 
 - Every user-facing change needs a changeset: `pnpm changeset` (or hand-write a file in `.changeset/`).
 - Merging to `main` opens/updates a `changeset-release/main` PR. Merging **that** PR bumps the version, syncs `<Version>` in `src/Directory.Packages.props` (via `.github/scripts/update-version.sh`), publishes to NuGet, and tags a GitHub release.
-- Commenting `!snapshot` on a PR publishes a canary build to GitHub Packages.
+- Commenting `!snapshot` on a PR (by a user with write access) publishes a canary build to NuGet.org.
 - Don't bump `<Version>` by hand — the release pipeline owns it.
 
 ## Where to look next
