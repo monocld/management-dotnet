@@ -53,7 +53,7 @@ public enum TargetTypes
   /// <summary>
   /// An authenticator.
   /// </summary>
-  Authenticator,
+  ExternalProvider,
 
   /// <summary>
   /// An IP address.

@@ -61,6 +61,11 @@ public enum LogCategories
   Groups,
 
   /// <summary>
+  /// Events related to user grants and delegated permissions.
+  /// </summary>
+  Grants,
+
+  /// <summary>
   /// Events related to access policies.
   /// </summary>
   Policies,

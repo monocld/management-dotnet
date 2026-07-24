@@ -228,7 +228,7 @@ public class OptionsClient : MonoCloudClientBase
   /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
   /// <returns>SignUpCustomField</returns>
   /// <exception cref="MonoCloudException">A server side error occurred.</exception>
-  public Task<MonoCloudResponse<SignUpCustomField>> FindSignUpCustomFieldByNameAsync(string claimName, CancellationToken cancellationToken = default)
+  public Task<MonoCloudResponse<SignUpCustomField>> FindSignUpCustomFieldAsync(string claimName, CancellationToken cancellationToken = default)
   {
     if (claimName == null)
     {
@@ -321,6 +321,186 @@ public class OptionsClient : MonoCloudClientBase
 
     var urlBuilder = new StringBuilder();
     urlBuilder.Append($"options/authentication/signup/custom_fields/{encodedClaimName}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("DELETE"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+    };
+
+    return ProcessRequestAsync(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// List external authenticators
+  /// </summary>
+  /// <remarks>
+  /// Retrieves the list of configured external authenticators.
+  /// </remarks>>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>List&lt;ExternalProvider&gt;</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<List<ExternalProvider>>> GetAllExternalAuthenticatorsAsync(CancellationToken cancellationToken = default)
+  {
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append("options/authentication/external?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("GET"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<List<ExternalProvider>>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Configure an external provider
+  /// </summary>
+  /// <remarks>
+  /// Configures a new external provider that end-users can authenticate with.
+  /// </remarks>>
+  /// <param name="createExternalProviderRequest">The request payload used to configure the external provider.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>ExternalProvider</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<ExternalProvider>> CreateExternalProviderAsync(CreateExternalProviderRequest createExternalProviderRequest, CancellationToken cancellationToken = default)
+  {
+    if (createExternalProviderRequest == null)
+    {
+      throw new ArgumentNullException(nameof(createExternalProviderRequest));
+    }
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append("options/authentication/external?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("POST"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Content = new StringContent(Serialize(createExternalProviderRequest), Encoding.UTF8, "application/json"),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<ExternalProvider>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Retrieve an external provider
+  /// </summary>
+  /// <remarks>
+  /// Retrieves detailed information for the specified external provider.
+  /// </remarks>>
+  /// <param name="providerName">The name of the external provider.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>ExternalProvider</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<ExternalProvider>> FindExternalProviderAsync(string providerName, CancellationToken cancellationToken = default)
+  {
+    if (providerName == null)
+    {
+      throw new ArgumentNullException(nameof(providerName));
+    }
+
+    var encodedProviderName = HttpUtility.UrlEncode(providerName);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"options/authentication/external/{encodedProviderName}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("GET"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<ExternalProvider>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Update an external provider
+  /// </summary>
+  /// <remarks>
+  /// Applies a partial update to the specified external provider. Only fields included in the request are updated.
+  /// </remarks>>
+  /// <param name="providerName">The name of the external provider.</param>
+  /// <param name="patchExternalProviderRequest">The request payload used to update the external provider.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns>ExternalProvider</returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse<ExternalProvider>> PatchExternalProviderAsync(string providerName, PatchExternalProviderRequest patchExternalProviderRequest, CancellationToken cancellationToken = default)
+  {
+    if (providerName == null)
+    {
+      throw new ArgumentNullException(nameof(providerName));
+    }
+
+    if (patchExternalProviderRequest == null)
+    {
+      throw new ArgumentNullException(nameof(patchExternalProviderRequest));
+    }
+
+    var encodedProviderName = HttpUtility.UrlEncode(providerName);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"options/authentication/external/{encodedProviderName}?");
+
+    urlBuilder.Length--;
+
+    var request = new HttpRequestMessage
+    {
+      Method = new HttpMethod("PATCH"),
+      RequestUri = new Uri(urlBuilder.ToString(), UriKind.RelativeOrAbsolute),
+      Content = new StringContent(Serialize(patchExternalProviderRequest), Encoding.UTF8, "application/json"),
+      Headers =
+      {
+        { "Accept", "application/json" }
+      }
+    };
+
+    return ProcessRequestAsync<ExternalProvider>(request, cancellationToken);
+  }
+
+  /// <summary>
+  /// Delete an external provider
+  /// </summary>
+  /// <remarks>
+  /// Permanently deletes the specified external provider.
+  /// </remarks>>
+  /// <warning>This operation is irreversible.</warning>
+  /// <param name="providerName">The name of the external provider.</param>
+  /// <param name="cancellationToken">The <see cref="CancellationToken"/> used to propagate notifications that the operation should be canceled.</param>
+  /// <returns></returns>
+  /// <exception cref="MonoCloudException">A server side error occurred.</exception>
+  public Task<MonoCloudResponse> DeleteExternalProviderAsync(string providerName, CancellationToken cancellationToken = default)
+  {
+    if (providerName == null)
+    {
+      throw new ArgumentNullException(nameof(providerName));
+    }
+
+    var encodedProviderName = HttpUtility.UrlEncode(providerName);
+
+    var urlBuilder = new StringBuilder();
+    urlBuilder.Append($"options/authentication/external/{encodedProviderName}?");
 
     urlBuilder.Length--;
 

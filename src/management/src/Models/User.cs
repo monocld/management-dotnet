@@ -16,11 +16,6 @@ public class User
   public bool Disabled { get; set; }
 
   /// <summary>
-  /// Connections linked to this user.
-  /// </summary>
-  public List<UserConnection> Connections { get; set; }
-
-  /// <summary>
   /// Claims associated with the user.
   /// </summary>
   public Dictionary<string, object> Claims { get; set; }

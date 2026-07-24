@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UserExternalProviderSummary </title>
+      <title>Class PatchExternalProviderConnectionRequest </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UserExternalProviderSummary ">
+      <meta name="title" content="Class PatchExternalProviderConnectionRequest ">
       
-      <meta name="description" content="External Provider Summary: Represents a linked identity provider account for the user.">
+      <meta name="description" content="Patch External Provider Connection Request: Used to update connection settings used by an external authenticator.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/monocloud/management-dotnet/new/main/apiSpec/new?filename=MonoCloud_Management_Models_UserExternalProviderSummary.md&amp;value=---%0Auid%3A%20MonoCloud.Management.Models.UserExternalProviderSummary%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/monocloud/management-dotnet/new/main/apiSpec/new?filename=MonoCloud_Management_Models_PatchExternalProviderConnectionRequest.md&amp;value=---%0Auid%3A%20MonoCloud.Management.Models.PatchExternalProviderConnectionRequest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MonoCloud.Management.Models.UserExternalProviderSummary">
+        <article data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest">
 
 
 
-  <h1 id="MonoCloud_Management_Models_UserExternalProviderSummary" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary" class="text-break">
-Class UserExternalProviderSummary  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/UserExternalProviderSummary.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MonoCloud_Management_Models_PatchExternalProviderConnectionRequest" data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest" class="text-break">
+Class PatchExternalProviderConnectionRequest  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/PatchExternalProviderConnectionRequest.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,12 +93,13 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
   <dl><dt>Assembly</dt><dd>MonoCloud.Management.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>External Provider Summary: Represents a linked identity provider account for the user.</p>
+  <div class="markdown summary"><p>Patch External Provider Connection Request: Used to update connection settings used by an external authenticator.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UserExternalProviderSummary</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(PatchConverter&lt;PatchExternalProviderConnectionRequest&gt;))]
+public class PatchExternalProviderConnectionRequest</code></pre>
   </div>
 
 
@@ -108,7 +109,7 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">UserExternalProviderSummary</span></div>
+      <div><span class="xref">PatchExternalProviderConnectionRequest</span></div>
     </dd>
   </dl>
 
@@ -149,19 +150,19 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
 </h2>
 
 
-  <a id="MonoCloud_Management_Models_UserExternalProviderSummary_Authenticator_" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.Authenticator*"></a>
+  <a id="MonoCloud_Management_Models_PatchExternalProviderConnectionRequest_DiscoveryUrl_" data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest.DiscoveryUrl*"></a>
 
-  <h3 id="MonoCloud_Management_Models_UserExternalProviderSummary_Authenticator" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.Authenticator">
-  Authenticator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/UserExternalProviderSummary.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MonoCloud_Management_Models_PatchExternalProviderConnectionRequest_DiscoveryUrl" data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest.DiscoveryUrl">
+  DiscoveryUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/PatchExternalProviderConnectionRequest.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The authenticator used by the provider.</p>
+  <div class="markdown level1 summary"><p>The discovery (metadata) endpoint of the external provider. The provider endpoints are derived from the discovery document.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ExternalAuthenticators Authenticator { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;string&gt; DiscoveryUrl { get; set; }</code></pre>
   </div>
 
 
@@ -170,7 +171,7 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="MonoCloud.Management.Models.ExternalAuthenticators.html">ExternalAuthenticators</a></dt>
+    <dt><a class="xref" href="MonoCloud.Management.Core.Helpers.Optional-1.html">Optional</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -181,19 +182,19 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
 
 
 
-  <a id="MonoCloud_Management_Models_UserExternalProviderSummary_Provider_" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.Provider*"></a>
+  <a id="MonoCloud_Management_Models_PatchExternalProviderConnectionRequest_PkceMode_" data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest.PkceMode*"></a>
 
-  <h3 id="MonoCloud_Management_Models_UserExternalProviderSummary_Provider" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.Provider">
-  Provider
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/UserExternalProviderSummary.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MonoCloud_Management_Models_PatchExternalProviderConnectionRequest_PkceMode" data-uid="MonoCloud.Management.Models.PatchExternalProviderConnectionRequest.PkceMode">
+  PkceMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/PatchExternalProviderConnectionRequest.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>The provider associated with this connection.</p>
+  <div class="markdown level1 summary"><p>The PKCE mode used with the external provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Provider { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Optional&lt;OidcPkceMode&gt; PkceMode { get; set; }</code></pre>
   </div>
 
 
@@ -202,39 +203,7 @@ Class UserExternalProviderSummary  <a class="header-action link-secondary" title
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="MonoCloud_Management_Models_UserExternalProviderSummary_ProviderUserId_" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.ProviderUserId*"></a>
-
-  <h3 id="MonoCloud_Management_Models_UserExternalProviderSummary_ProviderUserId" data-uid="MonoCloud.Management.Models.UserExternalProviderSummary.ProviderUserId">
-  ProviderUserId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/monocloud/management-dotnet/blob/main/src/management/src/Models/UserExternalProviderSummary.cs/#L21"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>The user identifier assigned by the identity provider.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ProviderUserId { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="MonoCloud.Management.Core.Helpers.Optional-1.html">Optional</a>&lt;<a class="xref" href="MonoCloud.Management.Models.OidcPkceMode.html">OidcPkceMode</a>&gt;</dt>
     <dd></dd>
   </dl>
 

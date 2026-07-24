@@ -51,9 +51,39 @@ public class LogRequest
   public string? CertificateIssuer { get; set; }
 
   /// <summary>
+  /// The SHA-256 thumbprint of the client certificate used in the request.
+  /// </summary>
+  public string? CertificateThumbprint { get; set; }
+
+  /// <summary>
+  /// The serial number of the client certificate used in the request.
+  /// </summary>
+  public string? CertificateSerialNumber { get; set; }
+
+  /// <summary>
   /// The SAN URIs of the client certificate used in the request.
   /// </summary>
-  public List<string>? SanUris { get; set; }
+  public List<string>? CertificateSanUris { get; set; }
+
+  /// <summary>
+  /// The SAN DNS names of the client certificate used in the request.
+  /// </summary>
+  public List<string>? CertificateSanDnsNames { get; set; }
+
+  /// <summary>
+  /// The SAN IP addresses of the client certificate used in the request.
+  /// </summary>
+  public List<string>? CertificateSanIpAddresses { get; set; }
+
+  /// <summary>
+  /// The SAN email addresses of the client certificate used in the request.
+  /// </summary>
+  public List<string>? CertificateSanEmails { get; set; }
+
+  /// <summary>
+  /// The SAN UPNs of the client certificate used in the request.
+  /// </summary>
+  public List<string>? CertificateSanUpns { get; set; }
 
   /// <summary>
   /// The SPIFFE ID of the SVID (X.509-SVID or JWT-SVID) that authenticated the request.

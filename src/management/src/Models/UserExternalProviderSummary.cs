@@ -6,7 +6,12 @@ namespace MonoCloud.Management.Models;
 public class UserExternalProviderSummary
 {
   /// <summary>
-  /// The authenticator associated with this connection.
+  /// The provider associated with this connection.
+  /// </summary>
+  public string Provider { get; set; }
+
+  /// <summary>
+  /// The authenticator used by the provider.
   /// </summary>
   public ExternalAuthenticators Authenticator { get; set; }
 

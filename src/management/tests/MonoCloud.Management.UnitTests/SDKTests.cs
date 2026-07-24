@@ -36,12 +36,14 @@ public class SDKTests
 
     await _managementClient.Users.ExternalAuthenticatorDisconnectAsync("user", new ExternalAuthenticatorDisconnectRequest
     {
-      Authenticator = ExternalAuthenticators.Apple
+      Provider = "apple",
+      ProviderUserId = "user"
     });
 
     Assert.NotEmpty(_requestMessage);
-    Assert.Equal("apple", _requestMessage["authenticator"]);
-    Assert.Single(_requestMessage);
+    Assert.Equal("apple", _requestMessage["provider"]);
+    Assert.Equal("user", _requestMessage["provider_user_id"]);
+    Assert.Equal(2, _requestMessage.Count);
   }
 
   [Fact]
