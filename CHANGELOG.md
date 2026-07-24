@@ -1,5 +1,11 @@
 # @monocloud/management-dotnet
 
+## 0.2.11
+
+### Patch Changes
+
+- e3f1d1c: Updated SDKs to latest APIs
+
 ## 0.2.10
 
 ### Patch Changes
