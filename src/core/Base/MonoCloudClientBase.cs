@@ -176,7 +176,19 @@ public class MonoCloudClientBase
     return new MonoCloudResponse((int)response.StatusCode, response.Headers.Concat(response.Content.Headers).ToDictionary(k => k.Key, v => v.Value));
   }
 
-  private static async Task HandleErrorResponse(HttpResponseMessage response, CancellationToken cancellationToken)
+  /// <summary>
+  /// Throws the exception the problem details map to.
+  /// </summary>
+  /// <remarks>
+  /// An sdk whose api reports errors it can throw something narrower for overrides this, and defers to the base
+  /// mapping for everything else. What it throws has to derive from <see cref="MonoCloudException"/>, and an
+  /// override that returns without throwing leaves the caller to throw a generic <see cref="MonoCloudException"/>
+  /// for the status instead.
+  /// </remarks>
+  /// <param name="problem">The problem details returned from the server.</param>
+  protected virtual void ThrowProblem(ProblemDetails problem) => MonoCloudException.ThrowErr(problem);
+
+  private async Task HandleErrorResponse(HttpResponseMessage response, CancellationToken cancellationToken)
   {
     if (response.Content.Headers.ContentType?.MediaType == "application/problem+json")
     {
@@ -196,9 +208,14 @@ public class MonoCloudClientBase
         _ => result
       };
 
-      throw result is null
-        ? new MonoCloudException("Invalid body")
-        : MonoCloudException.ThrowErr(result);
+      if (result is null)
+      {
+        throw new MonoCloudException("Invalid body");
+      }
+
+      ThrowProblem(result);
+
+      return;
     }
 
     var message = await response.Content.ReadAsStringAsync();

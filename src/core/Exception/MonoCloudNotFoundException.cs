@@ -3,7 +3,7 @@ namespace MonoCloud.Management.Core.Exception;
 /// <summary>
 /// The MonoCloud Not Found Exception
 /// </summary>
-public class MonoCloudNotFoundException : MonoCloudRequestException
+public class MonoCloudNotFoundException : MonoCloudCodedException
 {
   /// <summary>
   /// Initializes the MonoCloudNotFoundException Class

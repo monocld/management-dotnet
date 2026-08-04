@@ -3,7 +3,7 @@ namespace MonoCloud.Management.Core.Exception;
 /// <summary>
 /// The MonoCloud Payment Required Exception
 /// </summary>
-public class MonoCloudPaymentRequiredException : MonoCloudRequestException
+public class MonoCloudPaymentRequiredException : MonoCloudCodedException
 {
   /// <summary>
   /// Initializes the MonoCloudPaymentRequiredException Class

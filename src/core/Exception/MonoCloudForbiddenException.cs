@@ -3,7 +3,7 @@ namespace MonoCloud.Management.Core.Exception;
 /// <summary>
 /// The MonoCloud Forbidden Exception
 /// </summary>
-public class MonoCloudForbiddenException : MonoCloudRequestException
+public class MonoCloudForbiddenException : MonoCloudCodedException
 {
   /// <summary>
   /// Initializes the MonoCloudForbiddenException Class

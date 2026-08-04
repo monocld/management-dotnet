@@ -3,7 +3,7 @@ namespace MonoCloud.Management.Core.Exception;
 /// <summary>
 /// The MonoCloud Conflict Exception
 /// </summary>
-public class MonoCloudConflictException : MonoCloudRequestException
+public class MonoCloudConflictException : MonoCloudCodedException
 {
   /// <summary>
   /// Initializes the MonoCloudConflictException Class

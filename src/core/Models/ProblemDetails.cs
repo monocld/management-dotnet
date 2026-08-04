@@ -31,6 +31,16 @@ public class ProblemDetails
   public string Instance { get; set; } = string.Empty;
 
   /// <summary>
+  /// The machine-readable code identifying the error. Null when the operation reported this status without one.
+  /// </summary>
+  public string? ErrorCode { get; set; }
+
+  /// <summary>
+  /// The identifier of the request, for tracing and diagnostics
+  /// </summary>
+  public string TraceId { get; set; } = string.Empty;
+
+  /// <summary>
   /// Additional data about the error
   /// </summary>
   [JsonExtensionData]

@@ -3,7 +3,7 @@ namespace MonoCloud.Management.Core.Exception;
 /// <summary>
 /// The MonoCloud Bad Request Exception
 /// </summary>
-public class MonoCloudBadRequestException : MonoCloudRequestException
+public class MonoCloudBadRequestException : MonoCloudCodedException
 {
   /// <summary>
   /// Initializes the MonoCloudBadRequestException Class
